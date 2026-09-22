@@ -1,4 +1,10 @@
 /* ========================================
+   SKILLUP
+   HOME PAGE
+======================================== */
+
+
+/* ========================================
    RESET
 ======================================== */
 
@@ -21,7 +27,7 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 a {
@@ -41,54 +47,17 @@ button {
 
 
 /* ========================================
-   TYPOGRAPHY
-======================================== */
-
-h1,
-h2,
-h3,
-h4 {
-    color: #102622;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-h1 {
-    font-size: 76px;
-    font-weight: 400;
-    line-height: 0.99;
-    letter-spacing: -3px;
-}
-
-h1 em {
-    color: #038C65;
-    font-style: italic;
-    font-weight: 400;
-}
-
-h2 {
-    font-size: 52px;
-    line-height: 1;
-}
-
-h3 {
-    font-size: 28px;
-    line-height: 1.1;
-}
-
-
-/* ========================================
    HEADER
 ======================================== */
 
 .site-header {
     position: relative;
-    z-index: 1000;
-
-    background-color: transparent;
+    z-index: 100;
+    background-color: #F7FAF8;
 }
 
 .navbar {
-    min-height: 72px;
+    height: 70px;
 
     display: flex;
     align-items: center;
@@ -96,7 +65,9 @@ h3 {
 }
 
 
-/* LOGO */
+/* ========================================
+   LOGO
+======================================== */
 
 .logo {
     color: #102622;
@@ -109,13 +80,14 @@ h3 {
     letter-spacing: -0.5px;
 }
 
-.logo::after {
-    content: ".";
+.logo span {
     color: #038C65;
 }
 
 
-/* DESKTOP NAVIGATION */
+/* ========================================
+   NAVIGATION
+======================================== */
 
 .desktop-navigation {
     display: flex;
@@ -123,11 +95,11 @@ h3 {
 
     gap: 34px;
 
-    margin-left: 90px;
+    margin-left: 130px;
 }
 
 .desktop-navigation a {
-    color: #506460;
+    color: #536762;
 
     font-size: 14px;
     font-weight: 500;
@@ -141,7 +113,7 @@ h3 {
 
 
 /* ========================================
-   HEADER ENROLL BUTTON
+   HEADER BUTTON
 ======================================== */
 
 .header-button {
@@ -159,16 +131,12 @@ h3 {
     font-size: 14px;
     font-weight: 600;
 
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 .header-button:hover {
     background-color: #038C65;
-    color: #F2F2F2;
-
-    transform: translateY(-1px);
+    color: #FFFFFF;
 }
 
 
@@ -182,12 +150,6 @@ h3 {
     width: 42px;
     height: 42px;
 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    gap: 5px;
-
     background-color: transparent;
 
     border: 1px solid #102622;
@@ -197,8 +159,12 @@ h3 {
 }
 
 .menu-toggle span {
+    display: block;
+
     width: 17px;
-    height: 1.5px;
+    height: 1px;
+
+    margin: 4px auto;
 
     background-color: #102622;
 }
@@ -215,47 +181,54 @@ h3 {
 .hero {
     position: relative;
 
-    padding: 82px 0 88px;
+    padding: 84px 0 90px;
 
     overflow: hidden;
 }
 
 
-/* SOFT GREEN LIGHT ON RIGHT */
+/* SOFT GREEN GLOW */
 
 .hero::after {
     content: "";
 
     position: absolute;
 
-    width: 620px;
-    height: 620px;
+    width: 600px;
+    height: 600px;
 
-    top: -160px;
-    right: -220px;
+    top: -150px;
+    right: -230px;
 
     background-color: #D8F2E6;
 
     border-radius: 50%;
 
-    opacity: 0.65;
+    opacity: 0.7;
 
     filter: blur(100px);
 
     pointer-events: none;
 
-    z-index: -1;
+    z-index: 0;
 }
 
 
+/* ========================================
+   HERO GRID
+======================================== */
+
 .hero-grid {
+    position: relative;
+    z-index: 1;
+
     display: grid;
 
-    grid-template-columns: 1.08fr 0.92fr;
-
-    align-items: center;
+    grid-template-columns: 1fr 0.92fr;
 
     gap: 55px;
+
+    align-items: center;
 }
 
 
@@ -267,30 +240,36 @@ h3 {
     max-width: 570px;
 }
 
-.eyebrow {
-    display: inline-flex;
-    align-items: center;
 
+/* ========================================
+   EYEBROW
+======================================== */
+
+.eyebrow {
     position: relative;
 
-    margin-bottom: 30px;
+    display: inline-block;
+
+    margin-bottom: 32px;
 
     padding: 7px 15px 7px 27px;
 
-    color: #29413B;
-
     border: 1px solid #C9DDD6;
+
     border-radius: 30px;
 
-    font-size: 11px;
+    color: #405851;
+
+    font-size: 10px;
     font-weight: 500;
 
-    letter-spacing: 1.4px;
+    letter-spacing: 1.3px;
+
     text-transform: uppercase;
 }
 
 
-/* GREEN DOT */
+/* DOT */
 
 .eyebrow::before {
     content: "";
@@ -298,6 +277,7 @@ h3 {
     position: absolute;
 
     left: 12px;
+    top: 50%;
 
     width: 5px;
     height: 5px;
@@ -305,22 +285,44 @@ h3 {
     background-color: #84D9B1;
 
     border-radius: 50%;
+
+    transform: translateY(-50%);
 }
 
 
 /* ========================================
-   HERO TITLE
+   H1
 ======================================== */
 
 .hero h1 {
-    max-width: 600px;
+    max-width: 590px;
 
     margin-bottom: 27px;
+
+    color: #102622;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 76px;
+    font-weight: 400;
+
+    line-height: 0.99;
+
+    letter-spacing: -3.5px;
+}
+
+.hero h1 em {
+    color: #038C65;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-style: italic;
+    font-weight: 400;
 }
 
 
 /* ========================================
-   HERO DESCRIPTION
+   DESCRIPTION
 ======================================== */
 
 .hero-description {
@@ -328,10 +330,11 @@ h3 {
 
     margin-bottom: 35px;
 
-    color: #3F5550;
+    color: #405650;
 
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 16px;
+
+    line-height: 1.75;
 }
 
 
@@ -366,12 +369,11 @@ h3 {
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease;
+        border-color 0.2s ease;
 }
 
 
-/* PRIMARY */
+/* GREEN BUTTON */
 
 .primary-button {
     background-color: #84D9B1;
@@ -382,63 +384,54 @@ h3 {
 
 .primary-button:hover {
     background-color: #038C65;
-    color: #F2F2F2;
+    color: #FFFFFF;
 
     border-color: #038C65;
-
-    transform: translateY(-2px);
 }
 
 
-/* SECONDARY */
+/* OUTLINE BUTTON */
 
 .secondary-button {
     background-color: #FFFFFF;
     color: #102622;
 
-    border: 1px solid #C9DDD6;
+    border: 1px solid #D0E0DB;
 }
 
 .secondary-button:hover {
     background-color: #D8F2E6;
 
     border-color: #84D9B1;
-
-    transform: translateY(-2px);
 }
 
 
 /* ========================================
-   HERO STATS
+   STATS
 ======================================== */
 
 .course-stats {
-    width: 100%;
+    padding-top: 28px;
 
-    padding-top: 30px;
-
-    border-top: 1px solid #C9DDD6;
+    border-top: 1px solid #CEDDD8;
 }
 
 .stats-grid {
     display: grid;
 
     grid-template-columns:
-        1.05fr
         1fr
         1fr
-        1.15fr;
+        1fr
+        1.1fr;
 }
 
-
-/* INDIVIDUAL STAT */
-
 .stat {
-    min-height: 72px;
+    min-height: 62px;
 
     padding: 0 25px;
 
-    border-left: 1px solid #D7E5E0;
+    border-left: 1px solid #D5E2DE;
 }
 
 .stat:first-child {
@@ -452,7 +445,7 @@ h3 {
 }
 
 
-/* MAIN NUMBER */
+/* MAIN VALUE */
 
 .stat strong {
     display: block;
@@ -463,36 +456,30 @@ h3 {
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
 
     line-height: 1;
 }
 
 
-/* SECOND LINE */
+/* DESCRIPTION */
 
 .stat span {
     display: block;
 
-    max-width: 135px;
+    max-width: 130px;
 
-    color: #35514A;
+    color: #35504A;
 
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
 
     line-height: 1.35;
 
     letter-spacing: 0.8px;
+
     text-transform: uppercase;
-}
-
-
-/* HIDE ICONS */
-
-.stat i {
-    display: none;
 }
 
 
@@ -518,39 +505,40 @@ h3 {
 
 
 /* ========================================
-   NEXT COHORT FLOATING CARD
+   NEXT COHORT CARD
 ======================================== */
 
 .next-cohort-card {
     position: absolute;
 
-    left: -42px;
+    left: -40px;
     bottom: -20px;
 
     width: 218px;
 
-    padding: 20px 21px;
+    padding: 19px 20px;
 
     background-color: #FFFFFF;
 
-    border: 1px solid #D7E5E0;
+    border: 1px solid #D6E3DF;
 
-    border-radius: 20px;
+    border-radius: 19px;
 
-    box-shadow: 0 14px 30px rgba(16, 38, 34, 0.12);
+    box-shadow: 0 12px 25px rgba(16, 38, 34, 0.12);
 }
 
-.next-cohort-card small {
+.card-label {
     display: block;
 
     margin-bottom: 7px;
 
-    color: #668079;
+    color: #6B817B;
 
     font-size: 10px;
     font-weight: 700;
 
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
@@ -559,6 +547,8 @@ h3 {
 
     color: #102622;
 
+    font-family: Georgia, "Times New Roman", serif;
+
     font-size: 18px;
     font-weight: 400;
 
@@ -566,24 +556,17 @@ h3 {
 }
 
 .next-cohort-card p {
-    position: relative;
+    display: flex;
+    align-items: center;
 
-    padding-left: 12px;
+    gap: 7px;
 
     color: #038C65;
 
     font-size: 11px;
-    font-weight: 500;
 }
 
-.next-cohort-card p::before {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 6px;
-
+.next-cohort-card p span {
     width: 5px;
     height: 5px;
 
@@ -605,8 +588,6 @@ h3 {
     padding: 20px 0;
 
     background-color: #102622;
-
-    color: #F2F2F2;
 }
 
 .moving-belt-track {
@@ -625,16 +606,15 @@ h3 {
 .moving-belt-track span {
     color: #F2F2F2;
 
-    font-family: "DM Sans", sans-serif;
-
     font-size: 14px;
     font-weight: 600;
 }
 
-.moving-belt-track .belt-star {
+.moving-belt-track b {
     color: #84D9B1;
 
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 @keyframes skillup-marquee {
@@ -658,7 +638,7 @@ h3 {
 
     background-color: #102622;
 
-    color: #F2F2F2;
+    color: #FFFFFF;
 }
 
 .footer-grid {
@@ -676,7 +656,7 @@ h3 {
 
     margin-bottom: 18px;
 
-    color: #F2F2F2;
+    color: #FFFFFF;
 }
 
 .footer-brand p {
@@ -695,10 +675,11 @@ h3 {
 
     font-family: "DM Sans", sans-serif;
 
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
 
     letter-spacing: 1px;
+
     text-transform: uppercase;
 }
 
@@ -709,7 +690,7 @@ h3 {
 
     margin-bottom: 9px;
 
-    color: #F2F2F2;
+    color: #FFFFFF;
 
     font-size: 14px;
 }
@@ -722,7 +703,6 @@ h3 {
 .footer-bottom {
     display: flex;
 
-    align-items: center;
     justify-content: space-between;
 
     gap: 30px;
@@ -750,21 +730,19 @@ h3 {
     }
 
     .desktop-navigation {
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr 0.9fr;
-
-        gap: 40px;
+        gap: 35px;
     }
 
-    h1 {
+    .hero h1 {
         font-size: 62px;
     }
 
     .hero-image img {
-        height: 560px;
+        height: 550px;
     }
 
     .next-cohort-card {
@@ -774,7 +752,7 @@ h3 {
 
 
 /* ========================================
-   MOBILE NAV
+   MOBILE HEADER
 ======================================== */
 
 @media (max-width: 800px) {
@@ -785,7 +763,7 @@ h3 {
     }
 
     .menu-toggle {
-        display: flex;
+        display: block;
     }
 
     .mobile-navigation {
@@ -814,14 +792,11 @@ h3 {
     }
 
     .mobile-navigation-button {
-        display: inline-flex;
-
         width: fit-content;
 
-        padding: 12px 22px;
+        padding: 11px 20px;
 
         background-color: #84D9B1;
-        color: #102622 !important;
 
         border-radius: 30px;
     }
@@ -839,25 +814,19 @@ h3 {
     }
 
     .hero {
-        padding: 55px 0 70px;
+        padding: 50px 0 75px;
     }
 
     .hero-grid {
         grid-template-columns: 1fr;
 
-        gap: 50px;
+        gap: 55px;
     }
 
-    h1 {
+    .hero h1 {
         font-size: 48px;
 
         letter-spacing: -2px;
-    }
-
-    .eyebrow {
-        margin-bottom: 24px;
-
-        font-size: 9px;
     }
 
     .hero-description {
@@ -868,8 +837,6 @@ h3 {
         flex-direction: column;
 
         align-items: stretch;
-
-        margin-bottom: 38px;
     }
 
     .primary-button,
@@ -880,10 +847,6 @@ h3 {
 
     /* STATS */
 
-    .course-stats {
-        padding-top: 25px;
-    }
-
     .stats-grid {
         grid-template-columns: 1fr 1fr;
 
@@ -891,11 +854,7 @@ h3 {
     }
 
     .stat {
-        min-height: 70px;
-
         padding: 0 15px;
-
-        border-left: 1px solid #D7E5E0;
     }
 
     .stat:nth-child(odd) {
@@ -905,30 +864,24 @@ h3 {
     }
 
     .stat strong {
-        font-size: 22px;
-    }
-
-    .stat span {
-        font-size: 9px;
+        font-size: 21px;
     }
 
 
     /* IMAGE */
 
     .hero-image img {
-        height: 470px;
+        height: 450px;
 
         border-radius: 24px;
     }
 
 
-    /* FLOATING CARD */
+    /* CARD */
 
     .next-cohort-card {
         left: 18px;
         bottom: -25px;
-
-        width: 210px;
     }
 
 
@@ -954,16 +907,8 @@ h3 {
 
 @media (max-width: 420px) {
 
-    h1 {
+    .hero h1 {
         font-size: 41px;
-    }
-
-    .hero {
-        padding-top: 40px;
-    }
-
-    .hero-image img {
-        height: 400px;
     }
 
     .stats-grid {
@@ -971,14 +916,18 @@ h3 {
     }
 
     .stat {
-        padding: 0 0 15px !important;
+        padding: 0 0 18px !important;
 
         border-left: none !important;
-        border-bottom: 1px solid #D7E5E0;
+        border-bottom: 1px solid #D5E2DE;
     }
 
     .stat:last-child {
         border-bottom: none;
+    }
+
+    .hero-image img {
+        height: 400px;
     }
 }
 
