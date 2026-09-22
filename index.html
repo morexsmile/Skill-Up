@@ -2,30 +2,55 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Skillup | Digital Product Design</title>
 
-    <!-- Google Fonts -->
+    <meta
+        name="description"
+        content="Skillup's 8-week Digital Product Design course. Learn through real projects, live critiques and portfolio case studies."
+    >
+
+
+    <!-- ========================================
+         GOOGLE FONTS
+    ========================================= -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
-    <!-- Font Awesome -->
+
+    <!-- ========================================
+         FONT AWESOME
+    ========================================= -->
+
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-    <!-- CSS -->
+
+    <!-- ========================================
+         CSS
+    ========================================= -->
+
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 
 <body>
+
 
     <!-- ========================================
          HEADER
@@ -35,11 +60,24 @@
 
         <div class="container navbar">
 
-            <a href="index.html" class="logo">
+
+            <!-- LOGO -->
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Skillup home"
+            >
                 Skillup<span>.</span>
             </a>
 
-            <nav class="desktop-navigation">
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav
+                class="desktop-navigation"
+                aria-label="Main navigation"
+            >
 
                 <a href="why-skillup.html">
                     Why Skillup
@@ -59,13 +97,24 @@
 
             </nav>
 
-            <a href="enroll.html" class="header-button">
+
+            <!-- HEADER CTA -->
+
+            <a
+                href="enroll.html"
+                class="header-button"
+            >
                 Enroll now
             </a>
 
+
+            <!-- MOBILE MENU BUTTON -->
+
             <button
                 class="menu-toggle"
-                aria-label="Open menu">
+                type="button"
+                aria-label="Open navigation menu"
+            >
 
                 <span></span>
                 <span></span>
@@ -75,9 +124,14 @@
         </div>
 
 
-        <!-- MOBILE NAVIGATION -->
+        <!-- ========================================
+             MOBILE NAVIGATION
+        ========================================= -->
 
-        <nav class="mobile-navigation">
+        <nav
+            class="mobile-navigation"
+            aria-label="Mobile navigation"
+        >
 
             <a href="why-skillup.html">
                 Why Skillup
@@ -95,7 +149,10 @@
                 FAQ
             </a>
 
-            <a href="enroll.html" class="mobile-navigation-button">
+            <a
+                href="enroll.html"
+                class="mobile-navigation-button"
+            >
                 Enroll now
             </a>
 
@@ -104,74 +161,95 @@
     </header>
 
 
+
     <!-- ========================================
-         HERO
+         MAIN
     ========================================= -->
 
     <main>
 
-        <section class="hero">
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
+
+        <section
+            class="hero"
+            id="top"
+        >
 
             <div class="container hero-grid">
 
 
-                <!-- LEFT SIDE -->
+                <!-- ==================================
+                     LEFT COLUMN
+                ================================== -->
 
                 <div class="hero-content">
+
+
+                    <!-- EYEBROW -->
 
                     <span class="eyebrow">
                         8-week intensive · Cohort starts Nov 2, 2026
                     </span>
 
 
+                    <!-- MAIN TITLE -->
+
                     <h1>
-                        Learn something<br>
-                        that <em>changes</em> what<br>
+                        Learn something
+                        that <em>changes</em> what
                         you can do.
                     </h1>
 
 
+                    <!-- DESCRIPTION -->
+
                     <p class="hero-description">
-                        Skillup’s Digital Product Design course is eight weeks
-                        of hands-on, career-focused learning — live critiques,
-                        real projects, and a portfolio you’ll actually be
-                        proud to send out.
+                        Skillup’s Digital Product Design course is eight
+                        weeks of hands-on, career-focused learning —
+                        live critiques, real projects, and a portfolio
+                        you’ll actually be proud to send out.
                     </p>
 
 
-                    <!-- BUTTONS -->
+                    <!-- ==================================
+                         CTA BUTTONS
+                    ================================== -->
 
                     <div class="hero-buttons">
 
+
                         <a
                             href="enroll.html"
-                            class="primary-button">
-
+                            class="primary-button"
+                        >
                             Reserve your seat
-
                         </a>
 
 
                         <a
                             href="curriculum.html"
-                            class="secondary-button">
-
+                            class="secondary-button"
+                        >
                             See the 8 weeks
-
                         </a>
+
 
                     </div>
 
 
-                    <!-- ========================================
-                         STATS
-                         THESE ARE INSIDE THE HERO
-                    ========================================= -->
+                    <!-- ==================================
+                         COURSE STATS
+                    ================================== -->
 
-                    <div class="course-stats">
+                    <section class="course-stats">
 
                         <div class="stats-grid">
 
+
+                            <!-- STAT 1 -->
 
                             <div class="stat">
 
@@ -186,6 +264,8 @@
                             </div>
 
 
+                            <!-- STAT 2 -->
+
                             <div class="stat">
 
                                 <strong>
@@ -199,6 +279,8 @@
                             </div>
 
 
+                            <!-- STAT 3 -->
+
                             <div class="stat">
 
                                 <strong>
@@ -211,6 +293,8 @@
 
                             </div>
 
+
+                            <!-- STAT 4 -->
 
                             <div class="stat">
 
@@ -227,38 +311,52 @@
 
                         </div>
 
-                    </div>
+                    </section>
 
                 </div>
 
 
-                <!-- ========================================
-                     RIGHT SIDE
-                ========================================= -->
+
+                <!-- ==================================
+                     RIGHT COLUMN
+                ================================== -->
 
                 <div class="hero-image">
 
+
+                    <!-- HERO IMAGE -->
+
                     <img
                         src="assets/hero-design.jpg"
-                        alt="Digital product design workspace">
+                        alt="Digital product design workspace with laptop, sketches and design materials"
+                    >
 
 
-                    <!-- FLOATING CARD -->
+                    <!-- ==================================
+                         FLOATING COHORT CARD
+                    ================================== -->
 
                     <div class="next-cohort-card">
+
 
                         <span class="card-label">
                             Next cohort
                         </span>
 
+
                         <h3>
                             Nov 2 — Dec 24, 2026
                         </h3>
 
+
                         <p>
+
                             <span></span>
+
                             9 of 24 seats left
+
                         </p>
+
 
                     </div>
 
@@ -267,72 +365,177 @@
             </div>
 
         </section>
+
 
 
         <!-- ========================================
              MOVING BELT
         ========================================= -->
 
-        <section class="moving-belt">
+        <section
+            class="moving-belt"
+            aria-label="Course topics"
+        >
 
             <div class="moving-belt-track">
 
-                <span>User research</span>
-                <b>✦</b>
 
-                <span>Wireframing</span>
-                <b>✦</b>
+                <!-- FIRST SET -->
 
-                <span>Visual systems</span>
-                <b>✦</b>
+                <span>
+                    User research
+                </span>
 
-                <span>Design systems</span>
-                <b>✦</b>
-
-                <span>Prototyping</span>
-                <b>✦</b>
-
-                <span>Usability testing</span>
-                <b>✦</b>
-
-                <span>Portfolio case studies</span>
-                <b>✦</b>
-
-                <span>Design critique</span>
-                <b>✦</b>
+                <b>
+                    ✦
+                </b>
 
 
-                <!-- DUPLICATE -->
+                <span>
+                    Wireframing
+                </span>
 
-                <span>User research</span>
-                <b>✦</b>
+                <b>
+                    ✦
+                </b>
 
-                <span>Wireframing</span>
-                <b>✦</b>
 
-                <span>Visual systems</span>
-                <b>✦</b>
+                <span>
+                    Visual systems
+                </span>
 
-                <span>Design systems</span>
-                <b>✦</b>
+                <b>
+                    ✦
+                </b>
 
-                <span>Prototyping</span>
-                <b>✦</b>
 
-                <span>Usability testing</span>
-                <b>✦</b>
+                <span>
+                    Design systems
+                </span>
 
-                <span>Portfolio case studies</span>
-                <b>✦</b>
+                <b>
+                    ✦
+                </b>
 
-                <span>Design critique</span>
-                <b>✦</b>
+
+                <span>
+                    Prototyping
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Usability testing
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Portfolio case studies
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Design critique
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+
+                <!-- SECOND SET
+                     Duplicate for animation
+                -->
+
+                <span>
+                    User research
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Wireframing
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Visual systems
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Design systems
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Prototyping
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Usability testing
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Portfolio case studies
+                </span>
+
+                <b>
+                    ✦
+                </b>
+
+
+                <span>
+                    Design critique
+                </span>
+
+                <b>
+                    ✦
+                </b>
 
             </div>
 
         </section>
 
     </main>
+
 
 
     <!-- ========================================
@@ -343,9 +546,15 @@
 
         <div class="container footer-grid">
 
+
+            <!-- FOOTER BRAND -->
+
             <div class="footer-brand">
 
-                <a href="index.html" class="logo">
+                <a
+                    href="index.html"
+                    class="logo"
+                >
                     Skillup<span>.</span>
                 </a>
 
@@ -356,23 +565,29 @@
             </div>
 
 
+            <!-- FOOTER LINKS -->
+
             <div class="footer-links">
 
                 <h3>
                     Explore
                 </h3>
 
+
                 <a href="why-skillup.html">
                     Why Skillup
                 </a>
+
 
                 <a href="curriculum.html">
                     Curriculum
                 </a>
 
+
                 <a href="mentors.html">
                     Mentors
                 </a>
+
 
                 <a href="faq.html">
                     FAQ
@@ -381,19 +596,24 @@
             </div>
 
 
+            <!-- FOOTER CONTACT -->
+
             <div class="footer-contact">
 
                 <h3>
                     Contact
                 </h3>
 
+
                 <a href="mailto:hello@skillup.education">
                     hello@skillup.education
                 </a>
 
+
                 <p>
                     Live sessions · Tue &amp; Thu, CET
                 </p>
+
 
                 <p>
                     Next cohort · Nov 2, 2026
@@ -403,6 +623,9 @@
 
         </div>
 
+
+
+        <!-- FOOTER BOTTOM -->
 
         <div class="container footer-bottom">
 
@@ -418,6 +641,11 @@
 
     </footer>
 
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
 
     <script src="js/index.js" defer></script>
 
