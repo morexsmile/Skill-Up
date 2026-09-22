@@ -1,6 +1,5 @@
 /* ========================================
-   SKILLUP
-   HOME PAGE
+   SKILLUP - INDEX
 ======================================== */
 
 
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #F7FAF8;
+    background-color: #F8FAF9;
     color: #102622;
     font-family: "DM Sans", sans-serif;
     line-height: 1.5;
@@ -53,11 +52,12 @@ button {
 .site-header {
     position: relative;
     z-index: 100;
-    background-color: #F7FAF8;
+
+    background-color: #F8FAF9;
 }
 
 .navbar {
-    height: 70px;
+    min-height: 70px;
 
     display: flex;
     align-items: center;
@@ -65,14 +65,12 @@ button {
 }
 
 
-/* ========================================
-   LOGO
-======================================== */
+/* LOGO */
 
 .logo {
     color: #102622;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, serif;
 
     font-size: 20px;
     font-weight: 700;
@@ -85,17 +83,13 @@ button {
 }
 
 
-/* ========================================
-   NAVIGATION
-======================================== */
+/* NAVIGATION */
 
 .desktop-navigation {
     display: flex;
     align-items: center;
 
     gap: 34px;
-
-    margin-left: 130px;
 }
 
 .desktop-navigation a {
@@ -112,16 +106,14 @@ button {
 }
 
 
-/* ========================================
-   HEADER BUTTON
-======================================== */
+/* HEADER BUTTON */
 
 .header-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    padding: 11px 21px;
+    padding: 11px 22px;
 
     background-color: #84D9B1;
     color: #102622;
@@ -131,7 +123,9 @@ button {
     font-size: 14px;
     font-weight: 600;
 
-    transition: background-color 0.2s ease;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .header-button:hover {
@@ -181,7 +175,7 @@ button {
 .hero {
     position: relative;
 
-    padding: 84px 0 90px;
+    padding: 82px 0 86px;
 
     overflow: hidden;
 }
@@ -194,29 +188,27 @@ button {
 
     position: absolute;
 
-    width: 600px;
-    height: 600px;
+    width: 620px;
+    height: 620px;
 
-    top: -150px;
-    right: -230px;
+    top: -180px;
+    right: -250px;
 
     background-color: #D8F2E6;
 
     border-radius: 50%;
 
-    opacity: 0.7;
+    opacity: 0.75;
 
     filter: blur(100px);
 
-    pointer-events: none;
-
     z-index: 0;
+
+    pointer-events: none;
 }
 
 
-/* ========================================
-   HERO GRID
-======================================== */
+/* HERO GRID */
 
 .hero-grid {
     position: relative;
@@ -224,11 +216,11 @@ button {
 
     display: grid;
 
-    grid-template-columns: 1fr 0.92fr;
-
-    gap: 55px;
+    grid-template-columns: 1.03fr 0.97fr;
 
     align-items: center;
+
+    gap: 55px;
 }
 
 
@@ -250,15 +242,15 @@ button {
 
     display: inline-block;
 
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     padding: 7px 15px 7px 27px;
+
+    color: #48615A;
 
     border: 1px solid #C9DDD6;
 
     border-radius: 30px;
-
-    color: #405851;
 
     font-size: 10px;
     font-weight: 500;
@@ -267,9 +259,6 @@ button {
 
     text-transform: uppercase;
 }
-
-
-/* DOT */
 
 .eyebrow::before {
     content: "";
@@ -291,30 +280,30 @@ button {
 
 
 /* ========================================
-   H1
+   HERO TITLE
 ======================================== */
 
 .hero h1 {
-    max-width: 590px;
+    max-width: 600px;
 
-    margin-bottom: 27px;
+    margin-bottom: 28px;
 
     color: #102622;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 76px;
+    font-size: 72px;
     font-weight: 400;
 
-    line-height: 0.99;
+    line-height: 0.98;
 
-    letter-spacing: -3.5px;
+    letter-spacing: -3px;
 }
 
 .hero h1 em {
     color: #038C65;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, serif;
 
     font-style: italic;
     font-weight: 400;
@@ -322,13 +311,13 @@ button {
 
 
 /* ========================================
-   DESCRIPTION
+   HERO DESCRIPTION
 ======================================== */
 
 .hero-description {
     max-width: 555px;
 
-    margin-bottom: 35px;
+    margin-bottom: 34px;
 
     color: #405650;
 
@@ -339,7 +328,7 @@ button {
 
 
 /* ========================================
-   HERO BUTTONS
+   BUTTONS
 ======================================== */
 
 .hero-buttons {
@@ -373,7 +362,7 @@ button {
 }
 
 
-/* GREEN BUTTON */
+/* PRIMARY */
 
 .primary-button {
     background-color: #84D9B1;
@@ -390,13 +379,13 @@ button {
 }
 
 
-/* OUTLINE BUTTON */
+/* SECONDARY */
 
 .secondary-button {
     background-color: #FFFFFF;
     color: #102622;
 
-    border: 1px solid #D0E0DB;
+    border: 1px solid #C9DDD6;
 }
 
 .secondary-button:hover {
@@ -406,14 +395,28 @@ button {
 }
 
 
+/*
+   IMPORTANT:
+   If your HTML/JS puts an arrow inside the buttons,
+   this hides it.
+*/
+
+.primary-button i,
+.primary-button svg,
+.secondary-button i,
+.secondary-button svg {
+    display: none;
+}
+
+
 /* ========================================
-   STATS
+   COURSE STATS
 ======================================== */
 
 .course-stats {
     padding-top: 28px;
 
-    border-top: 1px solid #CEDDD8;
+    border-top: 1px solid #D1DFDA;
 }
 
 .stats-grid {
@@ -423,15 +426,18 @@ button {
         1fr
         1fr
         1fr
-        1.1fr;
+        1.15fr;
 }
 
+
+/* STAT */
+
 .stat {
-    min-height: 62px;
+    min-height: 68px;
 
     padding: 0 25px;
 
-    border-left: 1px solid #D5E2DE;
+    border-left: 1px solid #D5E1DD;
 }
 
 .stat:first-child {
@@ -445,7 +451,7 @@ button {
 }
 
 
-/* MAIN VALUE */
+/* NUMBER */
 
 .stat strong {
     display: block;
@@ -454,10 +460,10 @@ button {
 
     color: #102622;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, serif;
 
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
 
     line-height: 1;
 }
@@ -468,9 +474,9 @@ button {
 .stat span {
     display: block;
 
-    max-width: 130px;
+    max-width: 135px;
 
-    color: #35504A;
+    color: #3E5750;
 
     font-size: 9px;
     font-weight: 500;
@@ -520,19 +526,23 @@ button {
 
     background-color: #FFFFFF;
 
-    border: 1px solid #D6E3DF;
+    border: 1px solid #D5E1DD;
 
     border-radius: 19px;
 
     box-shadow: 0 12px 25px rgba(16, 38, 34, 0.12);
 }
 
-.card-label {
+
+/* CARD LABEL */
+
+.next-cohort-card .card-label,
+.next-cohort-card small {
     display: block;
 
     margin-bottom: 7px;
 
-    color: #6B817B;
+    color: #71837E;
 
     font-size: 10px;
     font-weight: 700;
@@ -542,18 +552,24 @@ button {
     text-transform: uppercase;
 }
 
+
+/* CARD TITLE */
+
 .next-cohort-card h3 {
     margin-bottom: 8px;
 
     color: #102622;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Playfair Display", Georgia, serif;
 
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
 
     line-height: 1.2;
 }
+
+
+/* CARD FOOTER */
 
 .next-cohort-card p {
     display: flex;
@@ -564,9 +580,12 @@ button {
     color: #038C65;
 
     font-size: 11px;
+    font-weight: 500;
 }
 
 .next-cohort-card p span {
+    display: block;
+
     width: 5px;
     height: 5px;
 
@@ -585,9 +604,12 @@ button {
 
     overflow: hidden;
 
-    padding: 20px 0;
+    padding: 21px 0;
 
-    background-color: #102622;
+    background-color: #D8F2E6;
+
+    border-top: 1px solid #B8E5D0;
+    border-bottom: 1px solid #B8E5D0;
 }
 
 .moving-belt-track {
@@ -596,24 +618,29 @@ button {
 
     width: max-content;
 
-    gap: 28px;
+    gap: 38px;
 
     white-space: nowrap;
 
-    animation: skillup-marquee 30s linear infinite;
+    animation: skillup-marquee 32s linear infinite;
 }
 
 .moving-belt-track span {
-    color: #F2F2F2;
+    color: #617B72;
 
-    font-size: 14px;
-    font-weight: 600;
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .moving-belt-track b {
     color: #84D9B1;
 
-    font-size: 15px;
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 19px;
     font-weight: 400;
 }
 
@@ -729,16 +756,12 @@ button {
         width: calc(100% - 50px);
     }
 
-    .desktop-navigation {
-        margin-left: 40px;
-    }
-
     .hero-grid {
         gap: 35px;
     }
 
     .hero h1 {
-        font-size: 62px;
+        font-size: 61px;
     }
 
     .hero-image img {
@@ -752,7 +775,7 @@ button {
 
 
 /* ========================================
-   MOBILE HEADER
+   MOBILE NAV
 ======================================== */
 
 @media (max-width: 800px) {
@@ -775,7 +798,7 @@ button {
 
         padding: 25px;
 
-        background-color: #F7FAF8;
+        background-color: #F8FAF9;
 
         border-top: 1px solid #D8F2E6;
     }
@@ -794,7 +817,7 @@ button {
     .mobile-navigation-button {
         width: fit-content;
 
-        padding: 11px 20px;
+        padding: 11px 21px;
 
         background-color: #84D9B1;
 
@@ -814,7 +837,7 @@ button {
     }
 
     .hero {
-        padding: 50px 0 75px;
+        padding: 52px 0 70px;
     }
 
     .hero-grid {
@@ -824,7 +847,7 @@ button {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 47px;
 
         letter-spacing: -2px;
     }
@@ -832,6 +855,9 @@ button {
     .hero-description {
         font-size: 16px;
     }
+
+
+    /* BUTTONS */
 
     .hero-buttons {
         flex-direction: column;
@@ -908,7 +934,7 @@ button {
 @media (max-width: 420px) {
 
     .hero h1 {
-        font-size: 41px;
+        font-size: 40px;
     }
 
     .stats-grid {
@@ -919,7 +945,7 @@ button {
         padding: 0 0 18px !important;
 
         border-left: none !important;
-        border-bottom: 1px solid #D5E2DE;
+        border-bottom: 1px solid #D5E1DD;
     }
 
     .stat:last-child {
