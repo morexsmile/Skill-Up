@@ -26,7 +26,7 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 a {
@@ -72,14 +72,19 @@ h2 {
 
 h3 {
     font-size: 26px;
+    font-weight: 700;
 }
 
 .eyebrow {
     display: inline-block;
+
     margin-bottom: 20px;
+
     color: #038C65;
+
     font-size: 14px;
     font-weight: 700;
+
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -93,7 +98,9 @@ h3 {
     position: sticky;
     top: 0;
     z-index: 1000;
+
     background-color: #F2F2F2;
+
     border-bottom: 1px solid #D8F2E6;
 }
 
@@ -109,20 +116,25 @@ h3 {
 
 .logo {
     color: #102622;
+
     font-family: "Space Grotesk", sans-serif;
+
     font-size: 27px;
     font-weight: 700;
+
     letter-spacing: -1px;
 }
 
 .desktop-navigation {
     display: flex;
     align-items: center;
+
     gap: 32px;
 }
 
 .desktop-navigation a {
     color: #102622;
+
     font-size: 15px;
     font-weight: 600;
 
@@ -135,16 +147,15 @@ h3 {
 
 
 /* ========================================
-   HEADER ENROLL
+   HEADER ENROLL BUTTON
 ======================================== */
 
 .header-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
 
-    padding: 12px 23px;
+    padding: 12px 24px;
 
     background-color: #038C65;
     color: #F2F2F2;
@@ -159,18 +170,15 @@ h3 {
         transform 0.2s ease;
 }
 
-.header-button i {
-    font-size: 13px;
-}
-
 .header-button:hover {
     background-color: #102622;
+
     transform: translateY(-2px);
 }
 
 
 /* ========================================
-   MOBILE MENU
+   MOBILE MENU BUTTON
 ======================================== */
 
 .menu-toggle {
@@ -179,17 +187,18 @@ h3 {
     width: 44px;
     height: 44px;
 
-    background-color: transparent;
-    border: 1px solid #102622;
-    border-radius: 50%;
-
-    cursor: pointer;
-
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     gap: 5px;
+
+    background-color: transparent;
+
+    border: 1px solid #102622;
+    border-radius: 50%;
+
+    cursor: pointer;
 }
 
 .menu-toggle span {
@@ -211,7 +220,7 @@ h3 {
 ======================================== */
 
 .hero {
-    padding: 90px 0 80px;
+    padding: 90px 0 75px;
 }
 
 .hero-grid {
@@ -254,6 +263,7 @@ h3 {
 .hero-buttons {
     display: flex;
     align-items: center;
+
     gap: 14px;
 
     flex-wrap: wrap;
@@ -264,8 +274,6 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    gap: 10px;
 
     min-height: 52px;
 
@@ -283,6 +291,9 @@ h3 {
         transform 0.2s ease;
 }
 
+
+/* GREEN BUTTON */
+
 .primary-button {
     background-color: #038C65;
     color: #F2F2F2;
@@ -297,6 +308,9 @@ h3 {
     transform: translateY(-2px);
 }
 
+
+/* OUTLINE BUTTON */
+
 .secondary-button {
     background-color: transparent;
     color: #102622;
@@ -309,11 +323,6 @@ h3 {
     color: #F2F2F2;
 
     transform: translateY(-2px);
-}
-
-.primary-button i,
-.secondary-button i {
-    font-size: 13px;
 }
 
 
@@ -337,14 +346,29 @@ h3 {
 
 /* ========================================
    COURSE STATS
+========================================
 
-   IMPORTANT:
-   These are AFTER the hero buttons
-   and BEFORE the moving belt.
+   ORDER:
+
+   Reserve your seat
+   See the 8 weeks
+
+          ↓
+
+   8 weeks
+   live & online
+   24 seats / per cohort
+   2 / portfolio case studies
+   Weekly / 1:1-style critiques
+
+          ↓
+
+   MOVING BELT
+
 ======================================== */
 
 .course-stats {
-    padding: 55px 0;
+    padding: 50px 0;
 
     background-color: #D8F2E6;
 
@@ -355,51 +379,69 @@ h3 {
 .stats-grid {
     display: grid;
 
-    grid-template-columns: repeat(5, 1fr);
-
-    gap: 20px;
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1fr
+        1fr;
 }
 
 .stat {
-    padding: 10px 15px;
+    min-height: 105px;
+
+    padding: 8px 25px;
 
     border-left: 1px solid #102622;
 }
 
 .stat:first-child {
+    padding-left: 0;
+
     border-left: none;
 }
 
-.stat i {
-    display: block;
-
-    margin-bottom: 15px;
-
-    color: #038C65;
-
-    font-size: 20px;
+.stat:last-child {
+    padding-right: 0;
 }
+
+
+/* TOP NUMBER */
 
 .stat strong {
     display: block;
-
-    margin-bottom: 7px;
 
     color: #102622;
 
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 700;
 
-    line-height: 1.1;
+    line-height: 1.05;
 }
 
+
+/* SECOND LINE */
+
 .stat span {
+    display: block;
+
+    margin-top: 5px;
+
     color: #102622;
 
     font-size: 14px;
     font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+/* SMALL ICONS */
+
+.stat i {
+    display: none;
 }
 
 
@@ -412,9 +454,10 @@ h3 {
 
     overflow: hidden;
 
-    padding: 22px 0;
+    padding: 20px 0;
 
     background-color: #102622;
+
     color: #F2F2F2;
 }
 
@@ -432,16 +475,18 @@ h3 {
 }
 
 .moving-belt-track span {
+    color: #F2F2F2;
+
     font-family: "Space Grotesk", sans-serif;
 
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .moving-belt-track .belt-star {
     color: #84D9B1;
 
-    font-size: 20px;
+    font-size: 18px;
 }
 
 @keyframes skillup-marquee {
@@ -453,7 +498,6 @@ h3 {
     to {
         transform: translateX(-50%);
     }
-
 }
 
 
@@ -465,6 +509,7 @@ h3 {
     padding: 75px 0 30px;
 
     background-color: #102622;
+
     color: #F2F2F2;
 }
 
@@ -575,6 +620,10 @@ h3 {
         border-left: none;
     }
 
+    .stat:nth-child(5) {
+        border-left: 1px solid #102622;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
 
@@ -588,7 +637,7 @@ h3 {
 
 
 /* ========================================
-   MOBILE HEADER
+   MOBILE NAVIGATION
 ======================================== */
 
 @media (max-width: 800px) {
@@ -609,7 +658,7 @@ h3 {
 
         gap: 20px;
 
-        padding: 25px 25px 30px;
+        padding: 25px;
 
         background-color: #F2F2F2;
 
@@ -627,24 +676,17 @@ h3 {
         font-weight: 600;
     }
 
-    .mobile-navigation a:hover {
-        color: #038C65;
-    }
-
     .mobile-navigation-button {
         display: inline-flex;
 
         align-items: center;
         justify-content: center;
 
-        gap: 9px;
-
         width: fit-content;
 
         padding: 12px 22px;
 
         background-color: #038C65;
-
         color: #F2F2F2 !important;
 
         border-radius: 30px;
@@ -681,7 +723,7 @@ h3 {
     }
 
     .hero {
-        padding: 65px 0 60px;
+        padding: 65px 0 55px;
     }
 
     .hero-grid {
@@ -694,6 +736,7 @@ h3 {
 
     .hero-buttons {
         flex-direction: column;
+
         align-items: stretch;
     }
 
@@ -707,20 +750,20 @@ h3 {
     }
 
 
-    /* STATS */
+    /* ========================================
+       STATS MOBILE
+    ======================================== */
 
     .course-stats {
-        padding: 45px 0;
+        padding: 35px 0;
     }
 
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 0;
+        grid-template-columns: 1fr 1fr;
     }
 
     .stat {
-        min-height: 125px;
+        min-height: 110px;
 
         padding: 20px 15px;
 
@@ -728,16 +771,21 @@ h3 {
         border-top: 1px solid #102622;
     }
 
-    .stat:nth-child(-n + 2) {
+    .stat:first-child {
+        padding-left: 15px;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2) {
         border-top: none;
     }
 
-    .stat i {
-        font-size: 18px;
+    .stat:nth-child(odd) {
+        border-right: 1px solid #102622;
     }
 
     .stat strong {
-        font-size: 20px;
+        font-size: 21px;
     }
 
     .stat span {
@@ -745,7 +793,9 @@ h3 {
     }
 
 
-    /* BELT */
+    /* ========================================
+       MOVING BELT
+    ======================================== */
 
     .moving-belt {
         padding: 18px 0;
@@ -756,11 +806,13 @@ h3 {
     }
 
     .moving-belt-track span {
-        font-size: 15px;
+        font-size: 14px;
     }
 
 
-    /* FOOTER */
+    /* ========================================
+       FOOTER
+    ======================================== */
 
     .footer-grid {
         grid-template-columns: 1fr;
@@ -805,6 +857,7 @@ h3 {
     }
 
     .stat {
+        border-right: none !important;
         border-top: 1px solid #102622 !important;
     }
 
