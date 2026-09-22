@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now</title>
+    <meta
+        name="description"
+        content="Reserve your seat for Skillup's Digital Product Design course."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/enroll.css">
+    <script src="js/enroll.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">SKILLUP</a>
+
+            <nav class="desktop-navigation">
+                <a href="why-skillup.html">Why Skillup</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="mentors.html">Mentors</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+
+            <a href="enroll.html" class="header-button">
+                Enroll now
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="mobile-navigation">
+            <a href="why-skillup.html">Why Skillup</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="faq.html">FAQ</a>
+            <a href="enroll.html" class="mobile-navigation-button">
+                Enroll now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">
+                    Enrollment
+                </p>
+
+                <h1>
+                    Reserve your seat for
+                    <br>
+                    Digital Product Design.
+                </h1>
+
+                <p>
+                    Cohorts stay small on purpose — every student presents
+                    their work and gets personal feedback every single week.
+                </p>
+            </div>
+        </section>
+
+        <!-- COURSE DETAILS -->
+        <section class="course-details">
+            <div class="container details-grid">
+                <div class="detail">
+                    <span>Cohort starts</span>
+                    <strong>
+                        Monday, Nov 2, 2026
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>Live sessions</span>
+                    <strong>
+                        Twice a week, evenings CET
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>Class size</span>
+                    <strong>
+                        24 seats
+                    </strong>
+                </div>
+
+                <div class="detail">
+                    <span>Included</span>
+                    <strong>
+                        Certificate + final portfolio review
+                    </strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENROLLMENT FORM -->
+        <section class="enrollment-section">
+            <div class="container enrollment-grid">
+                <div class="enrollment-intro">
+                    <p class="eyebrow">
+                        Your application
+                    </p>
+
+                    <h2>
+                        Tell us a little about yourself.
+                    </h2>
+
+                    <p>
+                        We'll use your answers to understand where you're
+                        starting from and what you want to get out of the
+                        course.
+                    </p>
+                </div>
+
+                <form class="enrollment-form" id="enrollment-form">
+                    <div class="form-field">
+                        <label for="full-name">
+                            Full name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full-name"
+                            placeholder="Your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">
+                            Email *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+                    <fieldset class="form-field">
+                        <legend>
+                            Where are you starting from? *
+                        </legend>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="experience"
+                                value="new"
+                                required
+                            >
+
+                            <span>
+                                New to design
+                            </span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="experience"
+                                value="some"
+                            >
+
+                            <span>
+                                Some experience
+                            </span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input
+                                type="radio"
+                                name="experience"
+                                value="working"
+                            >
+
+                            <span>
+                                Working designer
+                            </span>
+                        </label>
+                    </fieldset>
+
+                    <div class="form-field">
+                        <label for="portfolio">
+                            Portfolio or LinkedIn
+                        </label>
+
+                        <input
+                            type="url"
+                            id="portfolio"
+                            name="portfolio"
+                            placeholder="https://"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="goals">
+                            What do you want to be able to do after this course? *
+                        </label>
+
+                        <textarea
+                            id="goals"
+                            name="goals"
+                            rows="6"
+                            placeholder="Tell us what you'd like to learn or achieve..." required>
+                        </textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Reserve my seat →
+                    </button>
+
+                    <p class="form-note">
+                        No payment now. We'll confirm your seat by email
+                        within 24 hours.
+                    </p>
+
+                    <div
+                        class="form-success"
+                        id="form-success"
+                        aria-live="polite"
+                    >
+                        <h3>
+                            Application received.
+                        </h3>
+
+                        <p>
+                            Thanks for applying. We'll be in touch with the
+                            next steps soon.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">SKILLUP</a>
+                <p>
+                    Learn something that changes what you can do.
+                </p>
+            </div>
+          
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="why-skillup.html">Why Skillup</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="mentors.html">Mentors</a>
+                <a href="faq.html">FAQ</a>
+                <a href="enroll.html">Enroll now</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <a href="mailto:hello@skillup.education">
+                    hello@skillup.education
+                </a>
+                <p>Live sessions · Tue & Thu, CET</p>
+                <p>Next cohort · Nov 2, 2026</p>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Skillup. All rights reserved.</p>
+            <p>Digital Product Design · 8-week intensive</p>
+        </div>
+    </footer>
+</body>
+</html>
