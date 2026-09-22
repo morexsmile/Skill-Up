@@ -1,4 +1,11 @@
-/* RESET */
+/* ========================================
+   SKILLUP - INDEX
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
 
 * {
     box-sizing: border-box;
@@ -38,7 +45,9 @@ button {
 }
 
 
-/* TYPOGRAPHY */
+/* ========================================
+   TYPOGRAPHY
+======================================== */
 
 h1,
 h2,
@@ -62,12 +71,7 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-p {
-    color: #102622;
+    font-size: 26px;
 }
 
 .eyebrow {
@@ -81,7 +85,9 @@ p {
 }
 
 
-/* HEADER */
+/* ========================================
+   HEADER
+======================================== */
 
 .site-header {
     position: sticky;
@@ -93,9 +99,11 @@ p {
 
 .navbar {
     min-height: 82px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 30px;
 }
 
@@ -117,6 +125,7 @@ p {
     color: #102622;
     font-size: 15px;
     font-weight: 600;
+
     transition: color 0.2s ease;
 }
 
@@ -125,50 +134,70 @@ p {
 }
 
 
-/* HEADER ENROLL BUTTON */
+/* ========================================
+   HEADER ENROLL
+======================================== */
 
 .header-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 9px;
+
+    padding: 12px 23px;
+
     background-color: #038C65;
     color: #F2F2F2;
-    padding: 12px 23px;
+
     border-radius: 30px;
+
     font-size: 15px;
     font-weight: 700;
-    transition: background-color 0.2s ease,
-                color 0.2s ease,
-                transform 0.2s ease;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.header-button i {
+    font-size: 13px;
 }
 
 .header-button:hover {
     background-color: #102622;
-    color: #F2F2F2;
     transform: translateY(-2px);
 }
 
 
-/* MOBILE MENU BUTTON */
+/* ========================================
+   MOBILE MENU
+======================================== */
 
 .menu-toggle {
     display: none;
+
     width: 44px;
     height: 44px;
+
     background-color: transparent;
     border: 1px solid #102622;
     border-radius: 50%;
+
     cursor: pointer;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     gap: 5px;
 }
 
 .menu-toggle span {
     display: block;
+
     width: 18px;
     height: 2px;
+
     background-color: #102622;
 }
 
@@ -177,16 +206,21 @@ p {
 }
 
 
-/* HERO */
+/* ========================================
+   HERO
+======================================== */
 
 .hero {
-    padding: 90px 0 100px;
+    padding: 90px 0 80px;
 }
 
 .hero-grid {
     display: grid;
+
     grid-template-columns: 1fr 0.9fr;
+
     align-items: center;
+
     gap: 70px;
 }
 
@@ -205,108 +239,213 @@ p {
 
 .hero-description {
     max-width: 570px;
+
     margin-bottom: 34px;
+
     font-size: 19px;
     line-height: 1.7;
 }
+
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
 
 .hero-buttons {
     display: flex;
     align-items: center;
     gap: 14px;
+
     flex-wrap: wrap;
 }
-
-
-/* BUTTONS */
 
 .primary-button,
 .secondary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    gap: 10px;
+
     min-height: 52px;
+
     padding: 14px 25px;
+
     border-radius: 30px;
+
     font-size: 15px;
     font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.2s ease,
-                color 0.2s ease,
-                border-color 0.2s ease,
-                transform 0.2s ease;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .primary-button {
     background-color: #038C65;
     color: #F2F2F2;
+
     border: 2px solid #038C65;
 }
 
 .primary-button:hover {
     background-color: #102622;
     border-color: #102622;
+
     transform: translateY(-2px);
 }
 
 .secondary-button {
     background-color: transparent;
     color: #102622;
+
     border: 2px solid #102622;
 }
 
 .secondary-button:hover {
     background-color: #102622;
     color: #F2F2F2;
+
     transform: translateY(-2px);
 }
 
+.primary-button i,
+.secondary-button i {
+    font-size: 13px;
+}
 
-/* HERO IMAGE */
+
+/* ========================================
+   HERO IMAGE
+======================================== */
 
 .hero-image {
-    position: relative;
     overflow: hidden;
 }
 
 .hero-image img {
     width: 100%;
     height: 570px;
+
     object-fit: cover;
+
     border-radius: 6px;
 }
 
 
-/* MOVING BELT */
+/* ========================================
+   COURSE STATS
+
+   IMPORTANT:
+   These are AFTER the hero buttons
+   and BEFORE the moving belt.
+======================================== */
+
+.course-stats {
+    padding: 55px 0;
+
+    background-color: #D8F2E6;
+
+    border-top: 1px solid #84D9B1;
+    border-bottom: 1px solid #84D9B1;
+}
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.stat {
+    padding: 10px 15px;
+
+    border-left: 1px solid #102622;
+}
+
+.stat:first-child {
+    border-left: none;
+}
+
+.stat i {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #038C65;
+
+    font-size: 20px;
+}
+
+.stat strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #102622;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+.stat span {
+    color: #102622;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   MOVING BELT
+======================================== */
 
 .moving-belt {
     width: 100%;
+
     overflow: hidden;
+
+    padding: 22px 0;
+
     background-color: #102622;
     color: #F2F2F2;
-    padding: 20px 0;
 }
 
 .moving-belt-track {
     display: flex;
-    width: max-content;
     align-items: center;
+
+    width: max-content;
+
     gap: 28px;
+
     white-space: nowrap;
+
     animation: skillup-marquee 30s linear infinite;
 }
 
 .moving-belt-track span {
     font-family: "Space Grotesk", sans-serif;
+
     font-size: 17px;
     font-weight: 600;
 }
 
-.moving-belt-track span:nth-child(odd) {
+.moving-belt-track .belt-star {
     color: #84D9B1;
+
+    font-size: 20px;
 }
 
 @keyframes skillup-marquee {
+
     from {
         transform: translateX(0);
     }
@@ -314,75 +453,53 @@ p {
     to {
         transform: translateX(-50%);
     }
+
 }
 
 
-/* COURSE STATS */
-
-.course-stats {
-    padding: 90px 0;
-    background-color: #D8F2E6;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 25px;
-}
-
-.stat {
-    padding: 25px 10px;
-    border-top: 2px solid #102622;
-}
-
-.stat strong {
-    display: block;
-    margin-bottom: 8px;
-    color: #102622;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.stat span {
-    color: #102622;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-
-/* FOOTER */
+/* ========================================
+   FOOTER
+======================================== */
 
 .site-footer {
+    padding: 75px 0 30px;
+
     background-color: #102622;
     color: #F2F2F2;
-    padding: 75px 0 30px;
 }
 
 .footer-grid {
     display: grid;
+
     grid-template-columns: 1.5fr 1fr 1fr;
+
     gap: 70px;
+
     padding-bottom: 60px;
 }
 
 .footer-brand .logo {
     display: inline-block;
+
     margin-bottom: 20px;
+
     color: #F2F2F2;
 }
 
 .footer-brand p {
     max-width: 330px;
+
     color: #D8F2E6;
+
     font-size: 16px;
 }
 
 .footer-links h3,
 .footer-contact h3 {
     margin-bottom: 20px;
+
     color: #84D9B1;
+
     font-size: 16px;
 }
 
@@ -390,8 +507,11 @@ p {
 .footer-contact a,
 .footer-contact p {
     display: block;
+
     margin-bottom: 10px;
+
     color: #F2F2F2;
+
     font-size: 15px;
 }
 
@@ -402,19 +522,26 @@ p {
 
 .footer-bottom {
     display: flex;
+
     justify-content: space-between;
+
     gap: 30px;
+
     padding-top: 25px;
+
     border-top: 1px solid rgba(216, 242, 230, 0.25);
 }
 
 .footer-bottom p {
     color: #D8F2E6;
+
     font-size: 13px;
 }
 
 
-/* RESPONSIVE */
+/* ========================================
+   TABLET
+======================================== */
 
 @media (max-width: 1000px) {
 
@@ -428,6 +555,7 @@ p {
 
     .hero-grid {
         grid-template-columns: 1fr;
+
         gap: 50px;
     }
 
@@ -443,8 +571,13 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .stat:nth-child(4) {
+        border-left: none;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
+
         gap: 50px;
     }
 
@@ -454,7 +587,9 @@ p {
 }
 
 
-/* TABLET / MOBILE HEADER */
+/* ========================================
+   MOBILE HEADER
+======================================== */
 
 @media (max-width: 800px) {
 
@@ -469,9 +604,15 @@ p {
 
     .mobile-navigation {
         display: none;
+
         flex-direction: column;
+
         gap: 20px;
-        padding: 25px 0 30px;
+
+        padding: 25px 25px 30px;
+
+        background-color: #F2F2F2;
+
         border-top: 1px solid #D8F2E6;
     }
 
@@ -481,6 +622,7 @@ p {
 
     .mobile-navigation a {
         color: #102622;
+
         font-size: 17px;
         font-weight: 600;
     }
@@ -491,18 +633,28 @@ p {
 
     .mobile-navigation-button {
         display: inline-flex;
+
         align-items: center;
         justify-content: center;
+
+        gap: 9px;
+
         width: fit-content;
+
         padding: 12px 22px;
+
         background-color: #038C65;
+
         color: #F2F2F2 !important;
+
         border-radius: 30px;
     }
 }
 
 
-/* MOBILE */
+/* ========================================
+   MOBILE
+======================================== */
 
 @media (max-width: 600px) {
 
@@ -520,6 +672,7 @@ p {
 
     h1 {
         font-size: 46px;
+
         letter-spacing: -2px;
     }
 
@@ -527,12 +680,8 @@ p {
         font-size: 38px;
     }
 
-    h3 {
-        font-size: 24px;
-    }
-
     .hero {
-        padding: 65px 0 70px;
+        padding: 65px 0 60px;
     }
 
     .hero-grid {
@@ -557,8 +706,49 @@ p {
         height: 400px;
     }
 
+
+    /* STATS */
+
+    .course-stats {
+        padding: 45px 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 0;
+    }
+
+    .stat {
+        min-height: 125px;
+
+        padding: 20px 15px;
+
+        border-left: none;
+        border-top: 1px solid #102622;
+    }
+
+    .stat:nth-child(-n + 2) {
+        border-top: none;
+    }
+
+    .stat i {
+        font-size: 18px;
+    }
+
+    .stat strong {
+        font-size: 20px;
+    }
+
+    .stat span {
+        font-size: 13px;
+    }
+
+
+    /* BELT */
+
     .moving-belt {
-        padding: 17px 0;
+        padding: 18px 0;
     }
 
     .moving-belt-track {
@@ -569,22 +759,14 @@ p {
         font-size: 15px;
     }
 
-    .course-stats {
-        padding: 65px 0;
-    }
 
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .stat strong {
-        font-size: 28px;
-    }
+    /* FOOTER */
 
     .footer-grid {
         grid-template-columns: 1fr;
+
         gap: 40px;
+
         padding-bottom: 45px;
     }
 
@@ -594,6 +776,7 @@ p {
 
     .footer-bottom {
         flex-direction: column;
+
         gap: 8px;
     }
 
@@ -603,7 +786,9 @@ p {
 }
 
 
-/* SMALL MOBILE */
+/* ========================================
+   SMALL MOBILE
+======================================== */
 
 @media (max-width: 400px) {
 
@@ -619,13 +804,23 @@ p {
         grid-template-columns: 1fr;
     }
 
+    .stat {
+        border-top: 1px solid #102622 !important;
+    }
+
+    .stat:first-child {
+        border-top: none !important;
+    }
+
     .hero-image img {
         height: 340px;
     }
 }
 
 
-/* REDUCED MOTION */
+/* ========================================
+   REDUCED MOTION
+======================================== */
 
 @media (prefers-reduced-motion: reduce) {
 
