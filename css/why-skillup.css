@@ -21,13 +21,10 @@ html {
 body {
     background-color: #F8FAF9;
     color: #102622;
-    font-family: "DM Sans", sans-serif;
-    line-height: 1.5;
-}
 
-img {
-    display: block;
-    width: 100%;
+    font-family: "DM Sans", sans-serif;
+
+    line-height: 1.5;
 }
 
 a {
@@ -35,13 +32,19 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 button {
     font-family: "DM Sans", sans-serif;
 }
 
 .container {
-    width: calc(100% - 80px);
+    width: calc(100% - 110px);
     max-width: 1140px;
+
     margin: 0 auto;
 }
 
@@ -51,14 +54,13 @@ button {
 ======================================== */
 
 .site-header {
-    position: relative;
-    z-index: 100;
-
     background-color: #F8FAF9;
+
+    border-top: 4px solid #102622;
 }
 
 .navbar {
-    min-height: 70px;
+    min-height: 66px;
 
     display: flex;
     align-items: center;
@@ -84,7 +86,7 @@ button {
 }
 
 
-/* NAVIGATION */
+/* DESKTOP NAVIGATION */
 
 .desktop-navigation {
     display: flex;
@@ -94,7 +96,7 @@ button {
 }
 
 .desktop-navigation a {
-    color: #536762;
+    color: #405650;
 
     font-size: 14px;
     font-weight: 500;
@@ -114,7 +116,7 @@ button {
     align-items: center;
     justify-content: center;
 
-    padding: 11px 22px;
+    padding: 11px 23px;
 
     background-color: #84D9B1;
     color: #102622;
@@ -142,8 +144,8 @@ button {
 .menu-toggle {
     display: none;
 
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
 
     background-color: transparent;
 
@@ -156,7 +158,7 @@ button {
 .menu-toggle span {
     display: block;
 
-    width: 17px;
+    width: 16px;
     height: 1px;
 
     margin: 4px auto;
@@ -178,45 +180,15 @@ button {
 ======================================== */
 
 .why-hero {
-    position: relative;
-
-    padding: 55px 0 48px;
+    padding: 46px 0 48px;
 
     background-color: #F8FAF9;
 
-    border-bottom: 1px solid #D8E2DE;
-
-    overflow: hidden;
-}
-
-
-/* SOFT GREEN AREA ON RIGHT */
-
-.why-hero::after {
-    content: "";
-
-    position: absolute;
-
-    width: 420px;
-    height: 420px;
-
-    top: -190px;
-    right: -130px;
-
-    background-color: #D8F2E6;
-
-    border-radius: 50%;
-
-    opacity: 0.55;
-
-    filter: blur(85px);
-
-    pointer-events: none;
+    border-bottom: 1px solid #D2E1DB;
 }
 
 .why-hero .container {
-    position: relative;
-    z-index: 1;
+    display: block;
 }
 
 
@@ -227,14 +199,16 @@ button {
 .why-eyebrow {
     display: block;
 
-    margin-bottom: 22px;
+    margin-bottom: 19px;
 
     color: #038C65;
+
+    font-family: "DM Sans", sans-serif;
 
     font-size: 11px;
     font-weight: 600;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
 
     text-transform: uppercase;
 }
@@ -245,18 +219,18 @@ button {
 ======================================== */
 
 .why-hero h1 {
-    max-width: 700px;
+    max-width: 730px;
 
     color: #102622;
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 51px;
+    font-size: 52px;
     font-weight: 400;
 
     line-height: 1.03;
 
-    letter-spacing: -2px;
+    letter-spacing: -1.8px;
 }
 
 .why-hero h1 em {
@@ -271,14 +245,14 @@ button {
 ======================================== */
 
 .reasons-section {
-    padding: 58px 0 64px;
+    padding: 42px 0 64px;
 
     background-color: #F8FAF9;
 }
 
 
 /* ========================================
-   REASONS GRID
+   CARDS GRID
 ======================================== */
 
 .reasons-grid {
@@ -291,19 +265,22 @@ button {
 
 
 /* ========================================
-   REASON CARD
+   CARD
 ======================================== */
 
 .reason-card {
     min-height: 262px;
 
-    padding: 32px;
+    padding: 30px 32px 28px;
 
     background-color: #FFFFFF;
 
     border: 1px solid #CFE0D9;
 
-    border-radius: 24px;
+    border-radius: 23px;
+
+    display: flex;
+    flex-direction: column;
 
     transition:
         transform 0.2s ease,
@@ -311,9 +288,10 @@ button {
 }
 
 .reason-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 
-    box-shadow: 0 15px 30px rgba(16, 38, 34, 0.07);
+    box-shadow:
+        0 12px 25px rgba(16, 38, 34, 0.06);
 }
 
 
@@ -324,7 +302,7 @@ button {
 .reason-number {
     display: block;
 
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 
     color: #84D9B1;
 
@@ -342,9 +320,9 @@ button {
 ======================================== */
 
 .reason-card h2 {
-    max-width: 290px;
+    max-width: 300px;
 
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 
     color: #102622;
 
@@ -354,6 +332,8 @@ button {
     font-weight: 500;
 
     line-height: 1.2;
+
+    letter-spacing: -0.3px;
 }
 
 
@@ -362,11 +342,14 @@ button {
 ======================================== */
 
 .reason-card p {
-    max-width: 310px;
+    max-width: 315px;
 
-    color: #58706A;
+    color: #526963;
+
+    font-family: "DM Sans", sans-serif;
 
     font-size: 13px;
+    font-weight: 400;
 
     line-height: 1.7;
 }
@@ -391,6 +374,22 @@ button {
 }
 
 
+/* CTA EYEBROW */
+
+.cta-eyebrow {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #84D9B1;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
 /* CTA TITLE */
 
 .final-cta h2 {
@@ -400,12 +399,12 @@ button {
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 55px;
+    font-size: 54px;
     font-weight: 400;
 
     line-height: 1.05;
 
-    letter-spacing: -2px;
+    letter-spacing: -1.8px;
 }
 
 .final-cta h2 em {
@@ -418,7 +417,7 @@ button {
 /* CTA TEXT */
 
 .final-cta p {
-    max-width: 590px;
+    max-width: 600px;
 
     margin: 0 auto 30px;
 
@@ -432,12 +431,10 @@ button {
 
 /* CTA BUTTON */
 
-.final-cta .primary-button {
+.primary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    min-height: 49px;
 
     padding: 13px 27px;
 
@@ -445,7 +442,6 @@ button {
     color: #102622;
 
     border: 1px solid #84D9B1;
-
     border-radius: 30px;
 
     font-size: 14px;
@@ -456,7 +452,7 @@ button {
         color 0.2s ease;
 }
 
-.final-cta .primary-button:hover {
+.primary-button:hover {
     background-color: #FFFFFF;
     color: #102622;
 
@@ -469,7 +465,7 @@ button {
 ======================================== */
 
 .site-footer {
-    padding: 70px 0 30px;
+    padding: 65px 0 28px;
 
     background-color: #102622;
 
@@ -483,35 +479,35 @@ button {
 
     gap: 60px;
 
-    padding-bottom: 55px;
+    padding-bottom: 48px;
 }
 
 .footer-brand .logo {
     display: inline-block;
 
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     color: #FFFFFF;
 }
 
 .footer-brand p {
-    max-width: 320px;
+    max-width: 300px;
 
     color: #D8F2E6;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .footer-links h3,
 .footer-contact h3 {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     color: #84D9B1;
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
 
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 
     text-transform: uppercase;
 }
@@ -521,11 +517,11 @@ button {
 .footer-contact p {
     display: block;
 
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     color: #FFFFFF;
 
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer-links a:hover,
@@ -536,11 +532,12 @@ button {
 .footer-bottom {
     display: flex;
 
+    align-items: center;
     justify-content: space-between;
 
-    gap: 30px;
+    gap: 25px;
 
-    padding-top: 23px;
+    padding-top: 22px;
 
     border-top: 1px solid rgba(216, 242, 230, 0.2);
 }
@@ -548,7 +545,7 @@ button {
 .footer-bottom p {
     color: #AFC9C1;
 
-    font-size: 12px;
+    font-size: 11px;
 }
 
 
@@ -559,7 +556,7 @@ button {
 @media (max-width: 900px) {
 
     .container {
-        width: calc(100% - 50px);
+        width: calc(100% - 60px);
     }
 
     .why-hero h1 {
@@ -567,13 +564,14 @@ button {
     }
 
     .reason-card {
-        padding: 26px;
+        padding: 27px;
     }
+
 }
 
 
 /* ========================================
-   MOBILE NAVIGATION
+   MOBILE HEADER
 ======================================== */
 
 @media (max-width: 800px) {
@@ -594,11 +592,11 @@ button {
 
         gap: 18px;
 
-        padding: 25px;
+        padding: 22px 30px;
 
         background-color: #F8FAF9;
 
-        border-top: 1px solid #D8F2E6;
+        border-top: 1px solid #D8E2DE;
     }
 
     .mobile-navigation.active {
@@ -608,19 +606,20 @@ button {
     .mobile-navigation a {
         color: #102622;
 
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 600;
     }
 
     .mobile-navigation-button {
         width: fit-content;
 
-        padding: 11px 21px;
+        padding: 10px 20px;
 
         background-color: #84D9B1;
 
         border-radius: 30px;
     }
+
 }
 
 
@@ -638,44 +637,62 @@ button {
     /* HERO */
 
     .why-hero {
-        padding: 48px 0 42px;
+        padding: 42px 0 42px;
     }
 
     .why-eyebrow {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
 
         font-size: 10px;
+
+        letter-spacing: 1.5px;
     }
 
     .why-hero h1 {
-        font-size: 43px;
+        font-size: 40px;
 
-        letter-spacing: -1.5px;
+        line-height: 1.05;
+
+        letter-spacing: -1.2px;
     }
 
 
     /* CARDS */
 
     .reasons-section {
-        padding: 38px 0 55px;
+        padding: 30px 0 55px;
     }
 
     .reasons-grid {
         grid-template-columns: 1fr;
 
-        gap: 15px;
+        gap: 14px;
     }
 
     .reason-card {
         min-height: auto;
 
-        padding: 28px;
+        padding: 27px;
 
         border-radius: 20px;
     }
 
     .reason-number {
         margin-bottom: 20px;
+
+        font-size: 34px;
+    }
+
+    .reason-card h2 {
+        max-width: 100%;
+
+        font-size: 22px;
+    }
+
+    .reason-card p {
+        max-width: 100%;
+
+        font-size: 13px;
     }
 
 
@@ -686,9 +703,7 @@ button {
     }
 
     .final-cta h2 {
-        font-size: 43px;
-
-        letter-spacing: -1.5px;
+        font-size: 41px;
     }
 
 
@@ -697,7 +712,7 @@ button {
     .footer-grid {
         grid-template-columns: 1fr;
 
-        gap: 40px;
+        gap: 35px;
     }
 
     .footer-bottom {
@@ -705,6 +720,7 @@ button {
 
         align-items: flex-start;
     }
+
 }
 
 
@@ -715,10 +731,11 @@ button {
 @media (max-width: 420px) {
 
     .why-hero h1 {
-        font-size: 38px;
+        font-size: 35px;
     }
 
     .final-cta h2 {
-        font-size: 37px;
+        font-size: 36px;
     }
+
 }
