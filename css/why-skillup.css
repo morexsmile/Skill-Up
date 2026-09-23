@@ -1,12 +1,4 @@
-/* ========================================
-   SKILLUP
-   WHY SKILLUP
-======================================== */
-
-
-/* ========================================
-   RESET
-======================================== */
+/* RESET */
 
 * {
     box-sizing: border-box;
@@ -21,9 +13,7 @@ html {
 body {
     background-color: #F8FAF9;
     color: #102622;
-
     font-family: "DM Sans", sans-serif;
-
     line-height: 1.5;
 }
 
@@ -44,24 +34,18 @@ button {
 .container {
     width: calc(100% - 110px);
     max-width: 1140px;
-
     margin: 0 auto;
 }
 
-
-/* ========================================
-   HEADER
-======================================== */
+/* HEADER */
 
 .site-header {
     background-color: #F8FAF9;
-
     border-top: 4px solid #102622;
 }
 
 .navbar {
     min-height: 66px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,12 +56,9 @@ button {
 
 .logo {
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 20px;
     font-weight: 700;
-
     letter-spacing: -0.5px;
 }
 
@@ -91,16 +72,13 @@ button {
 .desktop-navigation {
     display: flex;
     align-items: center;
-
     gap: 34px;
 }
 
 .desktop-navigation a {
     color: #405650;
-
     font-size: 14px;
     font-weight: 500;
-
     transition: color 0.2s ease;
 }
 
@@ -115,17 +93,12 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: 11px 23px;
-
     background-color: #84D9B1;
     color: #102622;
-
     border-radius: 30px;
-
     font-size: 14px;
     font-weight: 600;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease;
@@ -136,33 +109,23 @@ button {
     color: #FFFFFF;
 }
 
-
-/* ========================================
-   MOBILE MENU
-======================================== */
+/* MOBILE MENU */
 
 .menu-toggle {
     display: none;
-
     width: 40px;
     height: 40px;
-
     background-color: transparent;
-
     border: 1px solid #102622;
     border-radius: 50%;
-
     cursor: pointer;
 }
 
 .menu-toggle span {
     display: block;
-
     width: 16px;
     height: 1px;
-
     margin: 4px auto;
-
     background-color: #102622;
 }
 
@@ -174,16 +137,11 @@ button {
     display: flex;
 }
 
-
-/* ========================================
-   WHY HERO
-======================================== */
+/* WHY HERO */
 
 .why-hero {
     padding: 46px 0 48px;
-
     background-color: #F8FAF9;
-
     border-bottom: 1px solid #D2E1DB;
 }
 
@@ -191,97 +149,61 @@ button {
     display: block;
 }
 
-
-/* ========================================
-   EYEBROW
-======================================== */
+/* EYEBROW */
 
 .why-eyebrow {
     display: block;
-
     margin-bottom: 19px;
-
     color: #038C65;
-
     font-family: "DM Sans", sans-serif;
-
     font-size: 11px;
     font-weight: 600;
-
     letter-spacing: 1.8px;
-
     text-transform: uppercase;
 }
 
-
-/* ========================================
-   MAIN TITLE
-======================================== */
+/* MAIN TITLE */
 
 .why-hero h1 {
     max-width: 730px;
-
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 52px;
     font-weight: 400;
-
     line-height: 1.03;
-
     letter-spacing: -1.8px;
 }
 
 .why-hero h1 em {
     color: #038C65;
-
     font-style: italic;
 }
 
-
-/* ========================================
-   REASONS SECTION
-======================================== */
+/* REASONS SECTION */
 
 .reasons-section {
     padding: 42px 0 64px;
-
     background-color: #F8FAF9;
 }
 
-
-/* ========================================
-   CARDS GRID
-======================================== */
+/* CARDS GRID */
 
 .reasons-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
 }
 
-
-/* ========================================
-   CARD
-======================================== */
+/* CARD */
 
 .reason-card {
     min-height: 262px;
-
     padding: 30px 32px 28px;
-
     background-color: #FFFFFF;
-
     border: 1px solid #CFE0D9;
-
     border-radius: 23px;
-
     display: flex;
     flex-direction: column;
-
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -289,83 +211,52 @@ button {
 
 .reason-card:hover {
     transform: translateY(-3px);
-
     box-shadow:
         0 12px 25px rgba(16, 38, 34, 0.06);
 }
 
-
-/* ========================================
-   NUMBER
-======================================== */
+/* NUMBER */
 
 .reason-number {
     display: block;
-
     margin-bottom: 25px;
-
     color: #84D9B1;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 38px;
     font-weight: 400;
-
     line-height: 1;
 }
 
-
-/* ========================================
-   CARD TITLE
-======================================== */
+/* CARD TITLE */
 
 .reason-card h2 {
     max-width: 300px;
-
     margin-bottom: 11px;
-
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 21px;
     font-weight: 500;
-
     line-height: 1.2;
-
     letter-spacing: -0.3px;
 }
 
-
-/* ========================================
-   CARD TEXT
-======================================== */
+/* CARD TEXT */
 
 .reason-card p {
     max-width: 315px;
-
     color: #526963;
-
     font-family: "DM Sans", sans-serif;
-
     font-size: 13px;
     font-weight: 400;
-
     line-height: 1.7;
 }
 
-
-/* ========================================
-   FINAL CTA
-======================================== */
+/* FINAL CTA */
 
 .final-cta {
     padding: 100px 0;
-
     background-color: #102622;
-
     color: #FFFFFF;
-
     text-align: center;
 }
 
@@ -373,58 +264,41 @@ button {
     max-width: 800px;
 }
 
-
 /* CTA EYEBROW */
 
 .cta-eyebrow {
     display: block;
-
     margin-bottom: 18px;
-
     color: #84D9B1;
-
     font-size: 10px;
     font-weight: 600;
-
     letter-spacing: 2px;
 }
-
 
 /* CTA TITLE */
 
 .final-cta h2 {
     margin-bottom: 22px;
-
     color: #FFFFFF;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 54px;
     font-weight: 400;
-
     line-height: 1.05;
-
     letter-spacing: -1.8px;
 }
 
 .final-cta h2 em {
     color: #84D9B1;
-
     font-style: italic;
 }
-
 
 /* CTA TEXT */
 
 .final-cta p {
     max-width: 600px;
-
     margin: 0 auto 30px;
-
     color: #D8F2E6;
-
     font-size: 16px;
-
     line-height: 1.7;
 }
 
@@ -435,18 +309,13 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: 13px 27px;
-
     background-color: #84D9B1;
     color: #102622;
-
     border: 1px solid #84D9B1;
     border-radius: 30px;
-
     font-size: 14px;
     font-weight: 600;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease;
@@ -455,60 +324,43 @@ button {
 .primary-button:hover {
     background-color: #FFFFFF;
     color: #102622;
-
     border-color: #FFFFFF;
 }
 
-
-/* ========================================
-   FOOTER
-======================================== */
+/* FOOTER */
 
 .site-footer {
     padding: 65px 0 28px;
-
     background-color: #102622;
-
     color: #FFFFFF;
 }
 
 .footer-grid {
     display: grid;
-
     grid-template-columns: 1.5fr 1fr 1fr;
-
     gap: 60px;
-
     padding-bottom: 48px;
 }
 
 .footer-brand .logo {
     display: inline-block;
-
     margin-bottom: 16px;
-
     color: #FFFFFF;
 }
 
 .footer-brand p {
     max-width: 300px;
-
     color: #D8F2E6;
-
     font-size: 14px;
 }
 
 .footer-links h3,
 .footer-contact h3 {
     margin-bottom: 16px;
-
     color: #84D9B1;
-
     font-size: 11px;
     font-weight: 700;
-
     letter-spacing: 1.5px;
-
     text-transform: uppercase;
 }
 
@@ -516,11 +368,8 @@ button {
 .footer-contact a,
 .footer-contact p {
     display: block;
-
     margin-bottom: 8px;
-
     color: #FFFFFF;
-
     font-size: 13px;
 }
 
@@ -531,30 +380,20 @@ button {
 
 .footer-bottom {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 25px;
-
     padding-top: 22px;
-
     border-top: 1px solid rgba(216, 242, 230, 0.2);
 }
 
 .footer-bottom p {
     color: #AFC9C1;
-
     font-size: 11px;
 }
 
-
-/* ========================================
-   TABLET
-======================================== */
-
+/* TABLET */
 @media (max-width: 900px) {
-
     .container {
         width: calc(100% - 60px);
     }
@@ -569,13 +408,8 @@ button {
 
 }
 
-
-/* ========================================
-   MOBILE HEADER
-======================================== */
-
+/* MOBILE HEADER */
 @media (max-width: 800px) {
-
     .desktop-navigation,
     .header-button {
         display: none;
@@ -587,15 +421,10 @@ button {
 
     .mobile-navigation {
         display: none;
-
         flex-direction: column;
-
         gap: 18px;
-
         padding: 22px 30px;
-
         background-color: #F8FAF9;
-
         border-top: 1px solid #D8E2DE;
     }
 
@@ -605,28 +434,20 @@ button {
 
     .mobile-navigation a {
         color: #102622;
-
         font-size: 15px;
         font-weight: 600;
     }
 
     .mobile-navigation-button {
         width: fit-content;
-
         padding: 10px 20px;
-
         background-color: #84D9B1;
-
         border-radius: 30px;
     }
 
 }
 
-
-/* ========================================
-   MOBILE
-======================================== */
-
+/* MOBILE */
 @media (max-width: 700px) {
 
     .container {
@@ -635,101 +456,76 @@ button {
 
 
     /* HERO */
-
     .why-hero {
         padding: 42px 0 42px;
     }
 
     .why-eyebrow {
         margin-bottom: 16px;
-
         font-size: 10px;
-
         letter-spacing: 1.5px;
     }
 
     .why-hero h1 {
         font-size: 40px;
-
         line-height: 1.05;
-
         letter-spacing: -1.2px;
     }
 
-
     /* CARDS */
-
     .reasons-section {
         padding: 30px 0 55px;
     }
 
     .reasons-grid {
         grid-template-columns: 1fr;
-
         gap: 14px;
     }
 
     .reason-card {
         min-height: auto;
-
         padding: 27px;
-
         border-radius: 20px;
     }
 
     .reason-number {
         margin-bottom: 20px;
-
         font-size: 34px;
     }
 
     .reason-card h2 {
         max-width: 100%;
-
         font-size: 22px;
     }
 
     .reason-card p {
         max-width: 100%;
-
         font-size: 13px;
     }
 
-
     /* CTA */
-
     .final-cta {
         padding: 75px 0;
     }
-
+   
     .final-cta h2 {
         font-size: 41px;
     }
 
-
     /* FOOTER */
-
     .footer-grid {
         grid-template-columns: 1fr;
-
         gap: 35px;
     }
 
     .footer-bottom {
         flex-direction: column;
-
         align-items: flex-start;
     }
-
 }
 
-
-/* ========================================
-   SMALL MOBILE
-======================================== */
-
+/* SMALL MOBILE */
 @media (max-width: 420px) {
-
     .why-hero h1 {
         font-size: 35px;
     }
@@ -737,5 +533,4 @@ button {
     .final-cta h2 {
         font-size: 36px;
     }
-
 }
