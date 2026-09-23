@@ -1,0 +1,868 @@
+/* ========================================
+   SKILLUP
+   CURRICULUM
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F2F2F2;
+    color: #102622;
+
+    font-family: "DM Sans", sans-serif;
+
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: "DM Sans", sans-serif;
+}
+
+.container {
+    width: calc(100% - 110px);
+    max-width: 1140px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header {
+    background-color: #F2F2F2;
+
+    border-top: 4px solid #102622;
+}
+
+.navbar {
+    min-height: 66px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #102622;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.logo:hover {
+    color: #038C65;
+}
+
+
+/* ========================================
+   DESKTOP NAVIGATION
+======================================== */
+
+.desktop-navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
+}
+
+.desktop-navigation a {
+    color: #405650;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.desktop-navigation a:hover {
+    color: #038C65;
+}
+
+
+/* ========================================
+   HEADER BUTTON
+======================================== */
+
+.header-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 23px;
+
+    background-color: #84D9B1;
+    color: #102622;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.header-button:hover {
+    background-color: #038C65;
+    color: #FFFFFF;
+}
+
+
+/* ========================================
+   MOBILE MENU
+======================================== */
+
+.menu-toggle {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: transparent;
+
+    border: 1px solid #102622;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 16px;
+    height: 1px;
+
+    margin: 4px auto;
+
+    background-color: #102622;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+.mobile-navigation.active {
+    display: flex;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.page-hero {
+    padding: 82px 0 72px;
+
+    background-color: #F2F2F2;
+
+    border-bottom: 1px solid #D0DED8;
+}
+
+.page-hero .container {
+    max-width: 900px;
+
+    margin-left: max(
+        55px,
+        calc((100% - 1140px) / 2)
+    );
+}
+
+
+/* ========================================
+   EYEBROW
+======================================== */
+
+.eyebrow {
+    margin-bottom: 18px;
+
+    color: #038C65;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   HERO TITLE
+======================================== */
+
+.page-hero h1 {
+    max-width: 720px;
+
+    margin-bottom: 24px;
+
+    color: #102622;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 68px;
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -2.5px;
+}
+
+
+/* ========================================
+   HERO DESCRIPTION
+======================================== */
+
+.page-hero > .container > p:last-child {
+    max-width: 650px;
+
+    color: #526963;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   CURRICULUM SECTION
+======================================== */
+
+.curriculum-section {
+    padding: 70px 0 85px;
+
+    background-color: #D8F2E6;
+}
+
+
+/* ========================================
+   WEEK CARDS
+======================================== */
+
+.curriculum-section .container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.week-card {
+    min-height: 190px;
+
+    padding: 28px 30px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #C9DDD5;
+
+    border-radius: 20px;
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+
+    gap: 20px;
+
+    align-items: start;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.week-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(16, 38, 34, 0.07);
+}
+
+
+/* ========================================
+   WEEK NUMBER
+======================================== */
+
+.week-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #84D9B1;
+    color: #102622;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ========================================
+   WEEK CONTENT
+======================================== */
+
+.week-content {
+    padding-top: 2px;
+}
+
+.week-content h2 {
+    margin-bottom: 9px;
+
+    color: #102622;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 27px;
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.7px;
+}
+
+.week-content p {
+    max-width: 430px;
+
+    color: #526963;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+/* ========================================
+   LEARNING SECTION
+======================================== */
+
+.learning-section {
+    padding: 90px 0;
+
+    background-color: #F2F2F2;
+
+    border-bottom: 1px solid #D0DED8;
+}
+
+.learning-grid {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+
+/* ========================================
+   LEARNING TITLE
+======================================== */
+
+.learning-grid > div:first-child h2 {
+    max-width: 400px;
+
+    color: #102622;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+
+/* ========================================
+   LEARNING ITEMS
+======================================== */
+
+.learning-items {
+    border-top: 1px solid #AFC8BF;
+}
+
+.learning-items > div {
+    padding: 23px 0;
+
+    border-bottom: 1px solid #AFC8BF;
+
+    display: grid;
+
+    grid-template-columns: 45px 180px 1fr;
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+.learning-items strong {
+    color: #038C65;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.learning-items h3 {
+    color: #102622;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 21px;
+    font-weight: 500;
+
+    line-height: 1.2;
+}
+
+.learning-items p {
+    color: #526963;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   FINAL CTA
+======================================== */
+
+.final-cta {
+    padding: 100px 0;
+
+    background-color: #102622;
+
+    color: #FFFFFF;
+
+    text-align: center;
+}
+
+.final-cta .container {
+    max-width: 760px;
+}
+
+.final-cta .eyebrow {
+    color: #84D9B1;
+}
+
+.final-cta h2 {
+    margin-bottom: 30px;
+
+    color: #FFFFFF;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 56px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1.8px;
+}
+
+
+/* ========================================
+   PRIMARY BUTTON
+======================================== */
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 27px;
+
+    background-color: #84D9B1;
+    color: #102622;
+
+    border: 1px solid #84D9B1;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.primary-button:hover {
+    background-color: #FFFFFF;
+    color: #102622;
+
+    border-color: #FFFFFF;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    padding: 65px 0 28px;
+
+    background-color: #102622;
+
+    color: #FFFFFF;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr;
+
+    gap: 60px;
+
+    padding-bottom: 48px;
+}
+
+.footer-brand .logo {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #FFFFFF;
+}
+
+.footer-brand p {
+    max-width: 300px;
+
+    color: #D8F2E6;
+
+    font-size: 14px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 16px;
+
+    color: #84D9B1;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+.footer-links a,
+.footer-contact a,
+.footer-contact p {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #FFFFFF;
+
+    font-size: 13px;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #84D9B1;
+}
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(216, 242, 230, 0.2);
+}
+
+.footer-bottom p {
+    color: #AFC9C1;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: calc(100% - 60px);
+    }
+
+    .page-hero .container {
+        margin-left: 30px;
+    }
+
+    .page-hero h1 {
+        font-size: 56px;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE HEADER
+======================================== */
+
+@media (max-width: 800px) {
+
+    .desktop-navigation,
+    .header-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .mobile-navigation {
+        display: none;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 22px 30px;
+
+        background-color: #F2F2F2;
+
+        border-top: 1px solid #D0DED8;
+    }
+
+    .mobile-navigation.active {
+        display: flex;
+    }
+
+    .mobile-navigation a {
+        color: #102622;
+
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .mobile-navigation-button {
+        width: fit-content;
+
+        padding: 10px 20px;
+
+        background-color: #84D9B1;
+
+        border-radius: 30px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: calc(100% - 36px);
+    }
+
+
+    /* HERO */
+
+    .page-hero {
+        padding: 55px 0 50px;
+    }
+
+    .page-hero .container {
+        margin-left: auto;
+    }
+
+    .eyebrow {
+        margin-bottom: 15px;
+
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .page-hero h1 {
+        margin-bottom: 20px;
+
+        font-size: 43px;
+
+        line-height: 1;
+
+        letter-spacing: -1.3px;
+    }
+
+    .page-hero > .container > p:last-child {
+        font-size: 15px;
+    }
+
+
+    /* CURRICULUM */
+
+    .curriculum-section {
+        padding: 45px 0 55px;
+    }
+
+    .curriculum-section .container {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .week-card {
+        min-height: auto;
+
+        padding: 24px;
+
+        grid-template-columns: 48px 1fr;
+
+        gap: 17px;
+
+        border-radius: 18px;
+    }
+
+    .week-number {
+        width: 43px;
+        height: 43px;
+
+        font-size: 11px;
+    }
+
+    .week-content h2 {
+        font-size: 24px;
+    }
+
+    .week-content p {
+        font-size: 13px;
+    }
+
+
+    /* LEARNING */
+
+    .learning-section {
+        padding: 65px 0;
+    }
+
+    .learning-grid {
+        gap: 38px;
+    }
+
+    .learning-grid > div:first-child h2 {
+        font-size: 40px;
+    }
+
+    .learning-items > div {
+        grid-template-columns: 40px 1fr;
+
+        gap: 8px 15px;
+
+        padding: 20px 0;
+    }
+
+    .learning-items h3 {
+        font-size: 20px;
+    }
+
+    .learning-items p {
+        grid-column: 2;
+
+        font-size: 13px;
+    }
+
+
+    /* CTA */
+
+    .final-cta {
+        padding: 75px 0;
+    }
+
+    .final-cta h2 {
+        font-size: 42px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 420px) {
+
+    .page-hero h1 {
+        font-size: 37px;
+    }
+
+    .week-content h2 {
+        font-size: 22px;
+    }
+
+    .learning-grid > div:first-child h2 {
+        font-size: 36px;
+    }
+
+    .final-cta h2 {
+        font-size: 36px;
+    }
+
+}
