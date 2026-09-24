@@ -1,6 +1,8 @@
-/* =====================================================
+
+
+/* ========================================
    RESET
-===================================================== */
+======================================== */
 
 * {
     box-sizing: border-box;
@@ -13,10 +15,9 @@ html {
 }
 
 body {
-    background: #F2F2F2;
+    background-color: #F8FAF9;
     color: #102622;
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -30,22 +31,16 @@ a {
     text-decoration: none;
 }
 
-button,
-input,
-textarea {
-    font: inherit;
+button {
+    font-family: "DM Sans", sans-serif;
 }
-
-
-/* =====================================================
-   CONTAINER
-===================================================== */
 
 .container {
     width: calc(100% - 80px);
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 /* ========================================
    HEADER
