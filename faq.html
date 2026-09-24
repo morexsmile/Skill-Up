@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
     <meta
-        name="description"
-        content="Frequently asked questions about Skillup's Digital Product Design course."
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
     >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>FAQ — Skillup</title>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet"
     >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="css/faq.css">
-    <script src="js/faq.js" defer></script>
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header class="site-header">
         <div class="container navbar">
-            <a href="index.html" class="logo">SKILLUP</a>
+
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Skillup home"
+            >
+                Skillup<span>.</span>
+            </a>
+
             <nav class="desktop-navigation">
                 <a href="why-skillup.html">Why Skillup</a>
                 <a href="curriculum.html">Curriculum</a>
@@ -30,13 +52,22 @@
                 <a href="faq.html">FAQ</a>
             </nav>
 
-            <a href="enroll.html" class="header-button">
+            <a
+                href="enroll.html"
+                class="header-button"
+            >
                 Enroll now
             </a>
-            <button class="menu-toggle" aria-label="Open menu">
+
+            <button
+                class="menu-toggle"
+                aria-label="Open menu"
+                type="button"
+            >
                 <span></span>
                 <span></span>
             </button>
+
         </div>
 
         <nav class="mobile-navigation">
@@ -44,48 +75,36 @@
             <a href="curriculum.html">Curriculum</a>
             <a href="mentors.html">Mentors</a>
             <a href="faq.html">FAQ</a>
-            <a href="enroll.html" class="mobile-navigation-button">
-                Enroll now
-            </a>
+            <a href="enroll.html">Enroll now</a>
         </nav>
     </header>
 
+
+    <!-- FAQ -->
     <main>
 
-        <!-- HERO -->
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow">
-                    FAQ
-                </p>
-
-                <h1>
-                    Questions,
-                    <br>
-                    answered.
-                </h1>
-
-                <p>
-                    Everything you need to know before joining the next
-                    Skillup cohort.
-                </p>
-            </div>
-        </section>
-
-        <!-- FAQ -->
         <section class="faq-section">
             <div class="container">
+
+                <div class="faq-intro">
+                    <p class="section-label">05 — FAQ</p>
+
+                    <h1>Questions, answered.</h1>
+                </div>
+
+
                 <div class="faq-list">
 
-                    <!-- QUESTION 1 -->
+                    <!-- FAQ ITEM 1 -->
                     <article class="faq-item">
+
                         <button
                             class="faq-question"
+                            type="button"
                             aria-expanded="false"
                         >
-                            <span>
-                                Do I need design experience to join?
-                            </span>
+                            <span>Do I need design experience to join?</span>
+
                             <span class="faq-icon">
                                 +
                             </span>
@@ -95,21 +114,24 @@
                             <p>
                                 No. The course starts from first principles
                                 and moves fast. Most cohorts mix complete
-                                beginners with working designers who want to
-                                level up their process.
+                                beginners with working designers levelling up
+                                — the critique groups are matched by experience.
                             </p>
                         </div>
+
                     </article>
 
-                    <!-- QUESTION 2 -->
+
+                    <!-- FAQ ITEM 2 -->
                     <article class="faq-item">
+
                         <button
                             class="faq-question"
+                            type="button"
                             aria-expanded="false"
                         >
-                            <span>
-                                What tools do I need?
-                            </span>
+                            <span>What tools do I need?</span>
+
                             <span class="faq-icon">
                                 +
                             </span>
@@ -117,23 +139,25 @@
 
                         <div class="faq-answer">
                             <p>
-                                You'll need a computer, a reliable internet
-                                connection and access to Figma. We'll provide
-                                guidance on the tools you'll use throughout
-                                the course.
+                                A laptop and a free Figma account. Everything
+                                we teach uses the same industry-standard tools
+                                you'll keep using on the job.
                             </p>
                         </div>
+
                     </article>
 
-                    <!-- QUESTION 3 -->
+
+                    <!-- FAQ ITEM 3 -->
                     <article class="faq-item">
+
                         <button
                             class="faq-question"
+                            type="button"
                             aria-expanded="false"
                         >
-                            <span>
-                                How much time does it take each week?
-                            </span>
+                            <span>How much time does it take each week?</span>
+
                             <span class="faq-icon">
                                 +
                             </span>
@@ -141,22 +165,25 @@
 
                         <div class="faq-answer">
                             <p>
-                                Plan for approximately 6–8 hours each week,
-                                including live sessions, project work and
-                                critique preparation.
+                                Plan for 8–10 hours: two live sessions, one
+                                critique, and project work on your own schedule.
+                                All sessions are recorded if you miss one.
                             </p>
                         </div>
+
                     </article>
 
-                    <!-- QUESTION 4 -->
+
+                    <!-- FAQ ITEM 4 -->
                     <article class="faq-item">
+
                         <button
                             class="faq-question"
+                            type="button"
                             aria-expanded="false"
                         >
-                            <span>
-                                What happens after I register?
-                            </span>
+                            <span>What happens after I register?</span>
+
                             <span class="faq-icon">
                                 +
                             </span>
@@ -164,23 +191,25 @@
 
                         <div class="faq-answer">
                             <p>
-                                After you submit your application, we'll
-                                review your information and contact you by
-                                email with the next steps and confirmation
-                                of your place.
+                                We'll email you within 24 hours to confirm
+                                your seat, walk you through payment plan
+                                options, and send your onboarding checklist.
                             </p>
                         </div>
+
                     </article>
 
-                    <!-- QUESTION 5 -->
+
+                    <!-- FAQ ITEM 5 -->
                     <article class="faq-item">
+
                         <button
                             class="faq-question"
+                            type="button"
                             aria-expanded="false"
                         >
-                            <span>
-                                What do I walk away with?
-                            </span>
+                            <span>What do I walk away with?</span>
+
                             <span class="faq-icon">
                                 +
                             </span>
@@ -188,70 +217,107 @@
 
                         <div class="faq-answer">
                             <p>
-                                You'll finish with practical product design
-                                experience, two portfolio case studies,
-                                feedback from experienced designers and a
-                                certificate of completion.
+                                A Skillup certificate, two reviewed portfolio
+                                case studies, and a final one-on-one with a
+                                mentor about your next career step.
                             </p>
                         </div>
+
                     </article>
+
                 </div>
+
             </div>
         </section>
 
-
-        <!-- CTA -->
-        <section class="final-cta">
-            <div class="container">
-                <p class="eyebrow">
-                    Still thinking about it?
-                </p>
-
-                <h2>
-                    Your next skill starts here.
-                </h2>
-
-                <a href="enroll.html" class="primary-button">
-                    Enroll now →
-                </a>
-            </div>
-        </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer class="site-footer">
+
         <div class="container footer-grid">
+
             <div class="footer-brand">
-                <a href="index.html" class="logo">SKILLUP</a>
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Skillup<span>.</span>
+                </a>
+
                 <p>
                     Learn something that changes what you can do.
                 </p>
+
             </div>
 
-            <div class="footer-links">
-                <h3>Explore</h3>
-                <a href="why-skillup.html">Why Skillup</a>
-                <a href="curriculum.html">Curriculum</a>
-                <a href="mentors.html">Mentors</a>
-                <a href="faq.html">FAQ</a>
-                <a href="enroll.html">Enroll now</a>
-            </div>
 
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <a href="mailto:hello@skillup.education">
-                    hello@skillup.education
+            <div class="footer-column">
+
+                <h3>Course</h3>
+
+                <a href="why-skillup.html">
+                    Why Skillup
                 </a>
 
-                <p>Live sessions · Tue & Thu, CET</p>
-                <p>Next cohort · Nov 2, 2026</p>
+                <a href="curriculum.html">
+                    Curriculum
+                </a>
+
+                <a href="mentors.html">
+                    Mentors
+                </a>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="enroll.html">
+                    Enroll now
+                </a>
+
             </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+                    hello@skillup.education
+                </p>
+
+                <p>
+                    Live sessions · Tue &amp; Thu, CET
+                </p>
+
+                <p>
+                    Next cohort · Nov 2, 2026
+                </p>
+
+            </div>
+
         </div>
 
+
         <div class="container footer-bottom">
-            <p>© 2026 Skillup. All rights reserved.</p>
-            <p>Digital Product Design · 8-week intensive</p>
+
+            <p>
+                © 2026 Skillup. All rights reserved.
+            </p>
+
+            <p>
+                Digital Product Design · 8-week intensive
+            </p>
+
         </div>
+
     </footer>
+
+
+    <script src="js/faq.js"></script>
+
 </body>
 </html>
