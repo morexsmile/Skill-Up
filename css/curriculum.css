@@ -1,11 +1,11 @@
-/* ========================================
+/* =========================================
    SKILLUP — CURRICULUM
-======================================== */
+========================================= */
 
 
-/* ========================================
+/* =========================================
    RESET
-======================================== */
+========================================= */
 
 * {
     box-sizing: border-box;
@@ -41,16 +41,16 @@ button {
 }
 
 .container {
-    width: calc(100% - 110px);
-    max-width: 1140px;
+    width: calc(100% - 80px);
+    max-width: 1220px;
 
     margin: 0 auto;
 }
 
 
-/* ========================================
+/* =========================================
    HEADER
-======================================== */
+========================================= */
 
 .site-header {
     background-color: #F2F2F2;
@@ -59,7 +59,7 @@ button {
 }
 
 .navbar {
-    min-height: 66px;
+    min-height: 68px;
 
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ button {
 }
 
 
-/* NAVIGATION */
+/* NAV */
 
 .desktop-navigation {
     display: flex;
@@ -99,12 +99,14 @@ button {
 
     font-size: 14px;
     font-weight: 500;
-
-    transition: color 0.2s ease;
 }
 
 .desktop-navigation a:hover {
     color: #038C65;
+}
+
+.desktop-navigation .active-link {
+    color: #102622;
 }
 
 
@@ -115,7 +117,9 @@ button {
     align-items: center;
     justify-content: center;
 
-    padding: 11px 23px;
+    min-width: 110px;
+
+    padding: 11px 21px;
 
     background-color: #84D9B1;
     color: #102622;
@@ -124,10 +128,6 @@ button {
 
     font-size: 14px;
     font-weight: 600;
-
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
 }
 
 .header-button:hover {
@@ -136,9 +136,9 @@ button {
 }
 
 
-/* ========================================
+/* =========================================
    MOBILE MENU
-======================================== */
+========================================= */
 
 .menu-toggle {
     display: none;
@@ -146,7 +146,7 @@ button {
     width: 40px;
     height: 40px;
 
-    background-color: transparent;
+    background: transparent;
 
     border: 1px solid #102622;
     border-radius: 50%;
@@ -174,37 +174,45 @@ button {
 }
 
 
-/* ========================================
-   CURRICULUM MAIN SECTION
-======================================== */
+/* =========================================
+   CURRICULUM
+========================================= */
 
-.curriculum {
+.curriculum-section {
     background-color: #D8F2E6;
 
-    padding: 58px 0 0;
+    padding: 38px 0 0;
 }
 
-.curriculum-grid {
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.curriculum-layout {
     display: grid;
 
     grid-template-columns: 42% 58%;
-
-    gap: 55px;
 
     align-items: start;
 }
 
 
-/* ========================================
-   LEFT SIDE
-======================================== */
+/* =========================================
+   LEFT COLUMN
+========================================= */
 
 .curriculum-intro {
-    padding-top: 17px;
+    padding-top: 0;
+
+    padding-right: 48px;
 }
 
-.eyebrow {
-    margin-bottom: 20px;
+
+/* LABEL */
+
+.section-label {
+    margin-bottom: 19px;
 
     color: #038C65;
 
@@ -217,25 +225,25 @@ button {
 }
 
 
-/* ========================================
-   TITLE
-======================================== */
+/* =========================================
+   MAIN TITLE
+========================================= */
 
 .curriculum-intro h1 {
     max-width: 430px;
 
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 
     color: #102622;
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 400;
 
-    line-height: 1.04;
+    line-height: 1.06;
 
-    letter-spacing: -1.8px;
+    letter-spacing: -1.7px;
 }
 
 .curriculum-intro h1 em {
@@ -245,16 +253,16 @@ button {
 }
 
 
-/* ========================================
-   DESCRIPTION
-======================================== */
+/* =========================================
+   INTRO TEXT
+========================================= */
 
-.curriculum-description {
+.intro-text {
     max-width: 430px;
 
     margin-bottom: 40px;
 
-    color: #5B7770;
+    color: #5D7770;
 
     font-size: 15px;
 
@@ -262,12 +270,13 @@ button {
 }
 
 
-/* ========================================
-   IMAGE
-======================================== */
+/* =========================================
+   CURRICULUM IMAGE
+========================================= */
 
 .curriculum-image {
     width: 100%;
+    max-width: 445px;
 
     height: 520px;
 
@@ -286,84 +295,95 @@ button {
 }
 
 
-/* ========================================
-   RIGHT SIDE — WEEKS
-======================================== */
+/* =========================================
+   RIGHT COLUMN
+========================================= */
 
-.weeks-list {
+.weeks {
     width: 100%;
+
+    padding-left: 0;
 }
 
 
-/* ========================================
-   WEEK ITEM
-======================================== */
+/* =========================================
+   WEEK
+========================================= */
 
-.week-item {
+.week {
+    width: 100%;
+
     min-height: 138px;
-
-    padding: 27px 25px;
 
     display: grid;
 
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 80px 1fr;
 
-    gap: 15px;
+    gap: 0;
 
-    border-bottom: 1px solid rgba(16, 38, 34, 0.10);
+    padding: 27px 24px;
+
+    border-bottom: 1px solid rgba(16, 38, 34, 0.09);
 }
 
 
-/* FIRST WEEK */
+/* =========================================
+   FIRST WEEK — WHITE BLOCK
+========================================= */
 
-.week-item.active {
+.week-featured {
     background-color: #FFFFFF;
 
-    border: none;
+    border-bottom: none;
 
-    padding: 27px 25px;
-
-    margin-bottom: 3px;
+    margin-bottom: 0;
 }
 
 
-/* ========================================
+/* =========================================
    WEEK NUMBER
-======================================== */
+========================================= */
 
 .week-number {
-    padding-top: 2px;
+    padding-top: 4px;
 
     color: #038C65;
 
-    font-size: 13px;
-    font-weight: 700;
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 15px;
+    font-weight: 500;
 }
 
 
-/* ========================================
-   WEEK CONTENT
-======================================== */
+/* =========================================
+   WEEK TITLE
+========================================= */
 
-.week-content h2 {
-    margin-bottom: 8px;
+.week-information h2 {
+    margin-bottom: 7px;
 
     color: #102622;
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
 
     line-height: 1.2;
 
-    letter-spacing: -0.4px;
+    letter-spacing: -0.3px;
 }
 
-.week-content p {
+
+/* =========================================
+   WEEK TEXT
+========================================= */
+
+.week-information p {
     max-width: 520px;
 
-    color: #5B7770;
+    color: #5D7770;
 
     font-size: 14px;
 
@@ -371,9 +391,9 @@ button {
 }
 
 
-/* ========================================
-   CTA
-======================================== */
+/* =========================================
+   FINAL CTA
+========================================= */
 
 .final-cta {
     padding: 100px 0;
@@ -383,11 +403,7 @@ button {
     text-align: center;
 }
 
-.final-cta .container {
-    max-width: 750px;
-}
-
-.final-cta .eyebrow {
+.final-cta .section-label {
     color: #84D9B1;
 }
 
@@ -398,25 +414,25 @@ button {
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 54px;
+    font-size: 52px;
     font-weight: 400;
 
-    line-height: 1;
+    line-height: 1.05;
 
     letter-spacing: -1.5px;
 }
 
 
-/* ========================================
+/* =========================================
    BUTTON
-======================================== */
+========================================= */
 
 .primary-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    padding: 13px 27px;
+    padding: 13px 25px;
 
     background-color: #84D9B1;
     color: #102622;
@@ -425,20 +441,17 @@ button {
 
     font-size: 14px;
     font-weight: 600;
-
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease;
 }
 
 .primary-button:hover {
-    background-color: #FFFFFF;
+    background-color: #038C65;
+    color: #FFFFFF;
 }
 
 
-/* ========================================
+/* =========================================
    FOOTER
-======================================== */
+========================================= */
 
 .site-footer {
     padding: 65px 0 28px;
@@ -455,13 +468,13 @@ button {
 
     gap: 60px;
 
-    padding-bottom: 48px;
+    padding-bottom: 45px;
 }
 
 .footer-brand .logo {
     display: inline-block;
 
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 
     color: #FFFFFF;
 }
@@ -476,7 +489,7 @@ button {
 
 .footer-links h3,
 .footer-contact h3 {
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 
     color: #84D9B1;
 
@@ -511,8 +524,6 @@ button {
     align-items: center;
     justify-content: space-between;
 
-    gap: 25px;
-
     padding-top: 22px;
 
     border-top: 1px solid rgba(216, 242, 230, 0.2);
@@ -525,50 +536,48 @@ button {
 }
 
 
-/* ========================================
+/* =========================================
    TABLET
-======================================== */
+========================================= */
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
 
     .container {
         width: calc(100% - 60px);
     }
 
-    .curriculum-grid {
+    .curriculum-layout {
         grid-template-columns: 1fr;
-
-        gap: 50px;
     }
 
     .curriculum-intro {
-        max-width: 700px;
+        padding-right: 0;
     }
 
     .curriculum-intro h1 {
-        font-size: 55px;
+        max-width: 600px;
+
+        font-size: 52px;
     }
 
-    .curriculum-description {
-        max-width: 600px;
+    .intro-text {
+        max-width: 650px;
     }
 
     .curriculum-image {
-        height: 400px;
+        max-width: 100%;
 
-        border-radius: 25px;
-    }
+        height: 430px;
 
-    .weeks-list {
-        padding-bottom: 60px;
+        margin-bottom: 30px;
     }
 
 }
 
 
-/* ========================================
-   MOBILE HEADER
-======================================== */
+/* =========================================
+   MOBILE NAV
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -592,7 +601,7 @@ button {
 
         background-color: #F2F2F2;
 
-        border-top: 1px solid #D0DED8;
+        border-top: 1px solid #D8E2DE;
     }
 
     .mobile-navigation.active {
@@ -619,9 +628,9 @@ button {
 }
 
 
-/* ========================================
+/* =========================================
    MOBILE
-======================================== */
+========================================= */
 
 @media (max-width: 600px) {
 
@@ -629,31 +638,30 @@ button {
         width: calc(100% - 36px);
     }
 
-    .curriculum {
-        padding-top: 40px;
+
+    /* SECTION */
+
+    .curriculum-section {
+        padding-top: 35px;
     }
 
-    .curriculum-grid {
-        gap: 35px;
-    }
 
-
-    /* TITLE */
+    /* LEFT */
 
     .curriculum-intro h1 {
         max-width: 350px;
 
-        font-size: 43px;
+        font-size: 42px;
 
-        line-height: 1.02;
+        line-height: 1.03;
 
-        letter-spacing: -1.3px;
+        letter-spacing: -1.2px;
     }
 
-    .curriculum-description {
-        margin-bottom: 30px;
-
+    .intro-text {
         font-size: 14px;
+
+        line-height: 1.6;
     }
 
 
@@ -668,31 +676,27 @@ button {
 
     /* WEEKS */
 
-    .week-item {
-        min-height: auto;
+    .week {
+        min-height: 0;
 
-        padding: 24px 5px;
+        grid-template-columns: 48px 1fr;
 
-        grid-template-columns: 45px 1fr;
-
-        gap: 10px;
+        padding: 23px 0;
     }
 
-    .week-item.active {
-        padding: 24px 20px;
-
-        border-radius: 0;
+    .week-featured {
+        padding: 23px 18px;
     }
 
     .week-number {
-        font-size: 12px;
+        font-size: 13px;
     }
 
-    .week-content h2 {
-        font-size: 20px;
+    .week-information h2 {
+        font-size: 19px;
     }
 
-    .week-content p {
+    .week-information p {
         font-size: 13px;
     }
 
@@ -704,7 +708,7 @@ button {
     }
 
     .final-cta h2 {
-        font-size: 42px;
+        font-size: 40px;
     }
 
 
@@ -720,27 +724,8 @@ button {
         flex-direction: column;
 
         align-items: flex-start;
-    }
 
-}
-
-
-/* ========================================
-   SMALL MOBILE
-======================================== */
-
-@media (max-width: 420px) {
-
-    .curriculum-intro h1 {
-        font-size: 38px;
-    }
-
-    .curriculum-image {
-        height: 300px;
-    }
-
-    .final-cta h2 {
-        font-size: 36px;
+        gap: 8px;
     }
 
 }
