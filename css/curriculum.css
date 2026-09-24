@@ -238,6 +238,7 @@ textarea {
     margin-top: 8px;
 
     overflow: hidden;
+      border-radius: 22px;
 }
 
 .curriculum-image img {
@@ -279,6 +280,7 @@ textarea {
     border-bottom: 1px solid rgba(16, 38, 34, 0.18);
 
     background: transparent;
+   transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 
@@ -290,12 +292,14 @@ textarea {
 
 .week-item.week-featured {
     background: #FFFFFF;
-
     border: 1px solid #cfe2d9;
-
     padding: 28px 22px;
-
     margin-bottom: 0;
+}
+
+.week-item:hover {
+    background: #FFFFFF;
+    border-color: #cfe2d9;
 }
 
 
