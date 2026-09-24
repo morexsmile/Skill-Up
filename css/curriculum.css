@@ -280,28 +280,30 @@ textarea {
     border-bottom: 1px solid rgba(16, 38, 34, 0.18);
 
     background: transparent;
-   transition: background 0.2s ease, border-color 0.2s ease;
+
+    transition: background 0.2s ease;
 }
 
 
-/* =====================================================
-   FIRST WEEK
-
-   Only W1 has the white card.
-===================================================== */
+/* ŻADNEGO stałego białego tła */
 
 .week-item.week-featured {
-    background: #FFFFFF;
-    border: 1px solid #cfe2d9;
+    background: transparent;
+
+    border: 0;
+    border-bottom: 1px solid rgba(16, 38, 34, 0.18);
+
     padding: 28px 22px;
+
     margin-bottom: 0;
 }
 
+
+/* KAŻDY tydzień robi się biały po najechaniu */
+
 .week-item:hover {
     background: #FFFFFF;
-    border-color: #cfe2d9;
 }
-
 
 /* =====================================================
    WEEK NUMBER
@@ -574,10 +576,16 @@ textarea {
         gap: 40px;
     }
 
-    .curriculum-image {
-        width: 390px;
-        height: 500px;
-    }
+   .curriculum-image {
+    width: 445px;
+    height: 520px;
+
+    margin-top: 8px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+}
 
     .curriculum-left h1 {
         font-size: 43px;
