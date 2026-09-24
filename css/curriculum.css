@@ -1,6 +1,5 @@
 /* ========================================
-   SKILLUP
-   CURRICULUM
+   SKILLUP — CURRICULUM
 ======================================== */
 
 
@@ -25,6 +24,11 @@ body {
     font-family: "DM Sans", sans-serif;
 
     line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 a {
@@ -81,9 +85,7 @@ button {
 }
 
 
-/* ========================================
-   DESKTOP NAVIGATION
-======================================== */
+/* NAVIGATION */
 
 .desktop-navigation {
     display: flex;
@@ -106,9 +108,7 @@ button {
 }
 
 
-/* ========================================
-   HEADER BUTTON
-======================================== */
+/* HEADER BUTTON */
 
 .header-button {
     display: inline-flex;
@@ -175,134 +175,155 @@ button {
 
 
 /* ========================================
-   HERO
+   CURRICULUM MAIN SECTION
 ======================================== */
 
-.page-hero {
-    padding: 82px 0 72px;
+.curriculum {
+    background-color: #D8F2E6;
 
-    background-color: #F2F2F2;
-
-    border-bottom: 1px solid #D0DED8;
+    padding: 58px 0 0;
 }
 
-.page-hero .container {
-    max-width: 900px;
+.curriculum-grid {
+    display: grid;
 
-    margin-left: max(
-        55px,
-        calc((100% - 1140px) / 2)
-    );
+    grid-template-columns: 42% 58%;
+
+    gap: 55px;
+
+    align-items: start;
 }
 
 
 /* ========================================
-   EYEBROW
+   LEFT SIDE
 ======================================== */
 
+.curriculum-intro {
+    padding-top: 17px;
+}
+
 .eyebrow {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 
     color: #038C65;
 
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 700;
 
-    letter-spacing: 1.8px;
+    letter-spacing: 2px;
 
     text-transform: uppercase;
 }
 
 
 /* ========================================
-   HERO TITLE
+   TITLE
 ======================================== */
 
-.page-hero h1 {
-    max-width: 720px;
+.curriculum-intro h1 {
+    max-width: 430px;
 
-    margin-bottom: 24px;
+    margin-bottom: 27px;
 
     color: #102622;
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 68px;
+    font-size: 50px;
     font-weight: 400;
 
-    line-height: 0.98;
+    line-height: 1.04;
 
-    letter-spacing: -2.5px;
+    letter-spacing: -1.8px;
+}
+
+.curriculum-intro h1 em {
+    color: #038C65;
+
+    font-style: italic;
 }
 
 
 /* ========================================
-   HERO DESCRIPTION
+   DESCRIPTION
 ======================================== */
 
-.page-hero > .container > p:last-child {
-    max-width: 650px;
+.curriculum-description {
+    max-width: 430px;
 
-    color: #526963;
+    margin-bottom: 40px;
 
-    font-size: 17px;
+    color: #5B7770;
 
-    line-height: 1.7;
+    font-size: 15px;
+
+    line-height: 1.65;
 }
 
 
 /* ========================================
-   CURRICULUM SECTION
+   IMAGE
 ======================================== */
 
-.curriculum-section {
-    padding: 70px 0 85px;
+.curriculum-image {
+    width: 100%;
 
-    background-color: #D8F2E6;
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius: 28px 28px 0 0;
+}
+
+.curriculum-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
 }
 
 
 /* ========================================
-   WEEK CARDS
+   RIGHT SIDE — WEEKS
 ======================================== */
 
-.curriculum-section .container {
+.weeks-list {
+    width: 100%;
+}
+
+
+/* ========================================
+   WEEK ITEM
+======================================== */
+
+.week-item {
+    min-height: 138px;
+
+    padding: 27px 25px;
+
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 65px 1fr;
 
-    gap: 16px;
+    gap: 15px;
+
+    border-bottom: 1px solid rgba(16, 38, 34, 0.10);
 }
 
-.week-card {
-    min-height: 190px;
 
-    padding: 28px 30px;
+/* FIRST WEEK */
 
+.week-item.active {
     background-color: #FFFFFF;
 
-    border: 1px solid #C9DDD5;
+    border: none;
 
-    border-radius: 20px;
+    padding: 27px 25px;
 
-    display: grid;
-
-    grid-template-columns: 60px 1fr;
-
-    gap: 20px;
-
-    align-items: start;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.week-card:hover {
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 12px 28px rgba(16, 38, 34, 0.07);
+    margin-bottom: 3px;
 }
 
 
@@ -311,22 +332,12 @@ button {
 ======================================== */
 
 .week-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 2px;
 
-    width: 48px;
-    height: 48px;
+    color: #038C65;
 
-    background-color: #84D9B1;
-    color: #102622;
-
-    border-radius: 50%;
-
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
-
-    letter-spacing: 0.5px;
 }
 
 
@@ -334,111 +345,9 @@ button {
    WEEK CONTENT
 ======================================== */
 
-.week-content {
-    padding-top: 2px;
-}
-
 .week-content h2 {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
-    color: #102622;
-
-    font-family: "Playfair Display", Georgia, serif;
-
-    font-size: 27px;
-    font-weight: 400;
-
-    line-height: 1.1;
-
-    letter-spacing: -0.7px;
-}
-
-.week-content p {
-    max-width: 430px;
-
-    color: #526963;
-
-    font-size: 13px;
-
-    line-height: 1.65;
-}
-
-
-/* ========================================
-   LEARNING SECTION
-======================================== */
-
-.learning-section {
-    padding: 90px 0;
-
-    background-color: #F2F2F2;
-
-    border-bottom: 1px solid #D0DED8;
-}
-
-.learning-grid {
-    display: grid;
-
-    grid-template-columns: 0.8fr 1.2fr;
-
-    gap: 90px;
-
-    align-items: start;
-}
-
-
-/* ========================================
-   LEARNING TITLE
-======================================== */
-
-.learning-grid > div:first-child h2 {
-    max-width: 400px;
-
-    color: #102622;
-
-    font-family: "Playfair Display", Georgia, serif;
-
-    font-size: 48px;
-    font-weight: 400;
-
-    line-height: 1;
-
-    letter-spacing: -1.5px;
-}
-
-
-/* ========================================
-   LEARNING ITEMS
-======================================== */
-
-.learning-items {
-    border-top: 1px solid #AFC8BF;
-}
-
-.learning-items > div {
-    padding: 23px 0;
-
-    border-bottom: 1px solid #AFC8BF;
-
-    display: grid;
-
-    grid-template-columns: 45px 180px 1fr;
-
-    gap: 20px;
-
-    align-items: start;
-}
-
-.learning-items strong {
-    color: #038C65;
-
-    font-size: 12px;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-.learning-items h3 {
     color: #102622;
 
     font-family: "Playfair Display", Georgia, serif;
@@ -447,19 +356,23 @@ button {
     font-weight: 500;
 
     line-height: 1.2;
+
+    letter-spacing: -0.4px;
 }
 
-.learning-items p {
-    color: #526963;
+.week-content p {
+    max-width: 520px;
 
-    font-size: 13px;
+    color: #5B7770;
 
-    line-height: 1.6;
+    font-size: 14px;
+
+    line-height: 1.55;
 }
 
 
 /* ========================================
-   FINAL CTA
+   CTA
 ======================================== */
 
 .final-cta {
@@ -467,13 +380,11 @@ button {
 
     background-color: #102622;
 
-    color: #FFFFFF;
-
     text-align: center;
 }
 
 .final-cta .container {
-    max-width: 760px;
+    max-width: 750px;
 }
 
 .final-cta .eyebrow {
@@ -487,17 +398,17 @@ button {
 
     font-family: "Playfair Display", Georgia, serif;
 
-    font-size: 56px;
+    font-size: 54px;
     font-weight: 400;
 
     line-height: 1;
 
-    letter-spacing: -1.8px;
+    letter-spacing: -1.5px;
 }
 
 
 /* ========================================
-   PRIMARY BUTTON
+   BUTTON
 ======================================== */
 
 .primary-button {
@@ -510,7 +421,6 @@ button {
     background-color: #84D9B1;
     color: #102622;
 
-    border: 1px solid #84D9B1;
     border-radius: 30px;
 
     font-size: 14px;
@@ -523,9 +433,6 @@ button {
 
 .primary-button:hover {
     background-color: #FFFFFF;
-    color: #102622;
-
-    border-color: #FFFFFF;
 }
 
 
@@ -622,24 +529,38 @@ button {
    TABLET
 ======================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     .container {
         width: calc(100% - 60px);
     }
 
-    .page-hero .container {
-        margin-left: 30px;
-    }
-
-    .page-hero h1 {
-        font-size: 56px;
-    }
-
-    .learning-grid {
+    .curriculum-grid {
         grid-template-columns: 1fr;
 
-        gap: 45px;
+        gap: 50px;
+    }
+
+    .curriculum-intro {
+        max-width: 700px;
+    }
+
+    .curriculum-intro h1 {
+        font-size: 55px;
+    }
+
+    .curriculum-description {
+        max-width: 600px;
+    }
+
+    .curriculum-image {
+        height: 400px;
+
+        border-radius: 25px;
+    }
+
+    .weeks-list {
+        padding-bottom: 60px;
     }
 
 }
@@ -702,115 +623,76 @@ button {
    MOBILE
 ======================================== */
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
     .container {
         width: calc(100% - 36px);
     }
 
-
-    /* HERO */
-
-    .page-hero {
-        padding: 55px 0 50px;
+    .curriculum {
+        padding-top: 40px;
     }
 
-    .page-hero .container {
-        margin-left: auto;
+    .curriculum-grid {
+        gap: 35px;
     }
 
-    .eyebrow {
-        margin-bottom: 15px;
 
-        font-size: 10px;
+    /* TITLE */
 
-        letter-spacing: 1.5px;
-    }
-
-    .page-hero h1 {
-        margin-bottom: 20px;
+    .curriculum-intro h1 {
+        max-width: 350px;
 
         font-size: 43px;
 
-        line-height: 1;
+        line-height: 1.02;
 
         letter-spacing: -1.3px;
     }
 
-    .page-hero > .container > p:last-child {
-        font-size: 15px;
+    .curriculum-description {
+        margin-bottom: 30px;
+
+        font-size: 14px;
     }
 
 
-    /* CURRICULUM */
+    /* IMAGE */
 
-    .curriculum-section {
-        padding: 45px 0 55px;
+    .curriculum-image {
+        height: 350px;
+
+        border-radius: 22px 22px 0 0;
     }
 
-    .curriculum-section .container {
-        grid-template-columns: 1fr;
 
-        gap: 13px;
-    }
+    /* WEEKS */
 
-    .week-card {
+    .week-item {
         min-height: auto;
 
-        padding: 24px;
+        padding: 24px 5px;
 
-        grid-template-columns: 48px 1fr;
+        grid-template-columns: 45px 1fr;
 
-        gap: 17px;
+        gap: 10px;
+    }
 
-        border-radius: 18px;
+    .week-item.active {
+        padding: 24px 20px;
+
+        border-radius: 0;
     }
 
     .week-number {
-        width: 43px;
-        height: 43px;
-
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .week-content h2 {
-        font-size: 24px;
-    }
-
-    .week-content p {
-        font-size: 13px;
-    }
-
-
-    /* LEARNING */
-
-    .learning-section {
-        padding: 65px 0;
-    }
-
-    .learning-grid {
-        gap: 38px;
-    }
-
-    .learning-grid > div:first-child h2 {
-        font-size: 40px;
-    }
-
-    .learning-items > div {
-        grid-template-columns: 40px 1fr;
-
-        gap: 8px 15px;
-
-        padding: 20px 0;
-    }
-
-    .learning-items h3 {
         font-size: 20px;
     }
 
-    .learning-items p {
-        grid-column: 2;
-
+    .week-content p {
         font-size: 13px;
     }
 
@@ -849,16 +731,12 @@ button {
 
 @media (max-width: 420px) {
 
-    .page-hero h1 {
-        font-size: 37px;
+    .curriculum-intro h1 {
+        font-size: 38px;
     }
 
-    .week-content h2 {
-        font-size: 22px;
-    }
-
-    .learning-grid > div:first-child h2 {
-        font-size: 36px;
+    .curriculum-image {
+        height: 300px;
     }
 
     .final-cta h2 {
