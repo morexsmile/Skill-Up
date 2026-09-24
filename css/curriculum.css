@@ -43,7 +43,7 @@ textarea {
 
 .container {
     width: calc(100% - 80px);
-    max-width: 1180px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
