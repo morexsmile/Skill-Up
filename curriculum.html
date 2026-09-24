@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Curriculum — Skillup</title>
 
@@ -17,67 +11,41 @@
         content="Explore the eight-week Digital Product Design curriculum at Skillup."
     >
 
-
-    <!-- FONTS -->
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
         rel="stylesheet"
     >
 
-
-    <!-- FONT AWESOME -->
-
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-
     <!-- CSS -->
+    <link rel="stylesheet" href="css/curriculum.css">
 
-    <link
-        rel="stylesheet"
-        href="css/curriculum.css"
-    >
-
-
-    <!-- JAVASCRIPT -->
-
-    <script
-        src="js/curriculum.js"
-        defer
-    ></script>
-
+    <!-- JS -->
+    <script src="js/curriculum.js" defer></script>
 </head>
-
 
 <body>
 
-
-    <!-- ========================================
+    <!-- =========================
          HEADER
-    ========================================= -->
+    ========================== -->
 
     <header class="site-header">
 
         <div class="container navbar">
 
-            <a
-                href="index.html"
-                class="logo"
-            >
+            <a href="index.html" class="logo">
                 SKILLUP
             </a>
-
 
             <nav class="desktop-navigation">
 
@@ -85,10 +53,7 @@
                     Why Skillup
                 </a>
 
-                <a
-                    href="curriculum.html"
-                    class="active-link"
-                >
+                <a href="curriculum.html" class="active">
                     Curriculum
                 </a>
 
@@ -102,26 +67,20 @@
 
             </nav>
 
-
-            <a
-                href="enroll.html"
-                class="header-button"
-            >
+            <a href="enroll.html" class="header-button">
                 Enroll now
             </a>
 
-
             <button
                 class="menu-toggle"
-                type="button"
                 aria-label="Open menu"
+                type="button"
             >
                 <span></span>
                 <span></span>
             </button>
 
         </div>
-
 
         <nav class="mobile-navigation">
 
@@ -141,10 +100,7 @@
                 FAQ
             </a>
 
-            <a
-                href="enroll.html"
-                class="mobile-navigation-button"
-            >
+            <a href="enroll.html" class="mobile-navigation-button">
                 Enroll now
             </a>
 
@@ -153,53 +109,40 @@
     </header>
 
 
-
-    <!-- ========================================
-         MAIN
-    ========================================= -->
+    <!-- =========================
+         CURRICULUM
+    ========================== -->
 
     <main>
 
-
-        <!-- ====================================
-             CURRICULUM SECTION
-        ===================================== -->
-
         <section class="curriculum-section">
 
-            <div class="container curriculum-layout">
+            <div class="curriculum-container">
 
+                <!-- LEFT COLUMN -->
 
-                <!-- =================================
-                     LEFT COLUMN
-                ================================== -->
+                <div class="curriculum-left">
 
-                <div class="curriculum-intro">
-
-                    <p class="section-label">
+                    <p class="eyebrow">
                         02 — Curriculum
                     </p>
-
 
                     <h1>
                         Eight weeks.
                         <em>One craft.</em>
                     </h1>
 
-
-                    <p class="intro-text">
-                        Every week combines a live session, a hands-on
-                        project, and a group critique. You build one
-                        product from week one to week eight — so the
-                        portfolio writes itself.
+                    <p class="curriculum-intro">
+                        Every week combines a live session, a hands-on project,
+                        and a group critique. You build one product from week
+                        one to week eight — so the portfolio writes itself.
                     </p>
-
 
                     <div class="curriculum-image">
 
                         <img
                             src="assets/curriculum.jpg"
-                            alt="Designer working on a digital product"
+                            alt="Product design sketches and interface wireframes"
                         >
 
                     </div>
@@ -207,32 +150,28 @@
                 </div>
 
 
+                <!-- RIGHT COLUMN -->
 
-                <!-- =================================
-                     RIGHT COLUMN
-                ================================== -->
+                <div class="curriculum-right">
 
-                <div class="weeks">
+                    <!-- WEEK 1 -->
 
-
-                    <!-- W1 -->
-
-                    <article class="week week-featured">
+                    <article class="week-item week-featured">
 
                         <div class="week-number">
                             W1
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Thinking in products
                             </h2>
 
                             <p>
-                                How great designers frame problems before
-                                touching a canvas. Briefs, constraints,
-                                and the anatomy of a good product decision.
+                                How great designers frame problems before touching
+                                a canvas. Briefs, constraints, and the anatomy of
+                                a good product decision.
                             </p>
 
                         </div>
@@ -240,25 +179,24 @@
                     </article>
 
 
+                    <!-- WEEK 2 -->
 
-                    <!-- W2 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W2
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Research that matters
                             </h2>
 
                             <p>
-                                Interviews and jobs-to-be-done — turning
-                                messy conversations into insights you can
-                                actually design from.
+                                Interviews and jobs-to-be-done — turning messy
+                                conversations into insights you can actually
+                                design from.
                             </p>
 
                         </div>
@@ -266,25 +204,24 @@
                     </article>
 
 
+                    <!-- WEEK 3 -->
 
-                    <!-- W3 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W3
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 From insight to concept
                             </h2>
 
                             <p>
-                                Information architecture, user flows,
-                                and fast wireframing. Getting to the
-                                right idea before polishing anything.
+                                Information architecture, user flows, and fast
+                                wireframing. Getting to the right idea before
+                                polishing anything.
                             </p>
 
                         </div>
@@ -292,16 +229,15 @@
                     </article>
 
 
+                    <!-- WEEK 4 -->
 
-                    <!-- W4 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W4
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Visual foundations
@@ -309,8 +245,7 @@
 
                             <p>
                                 Typography, color, and spacing with intent —
-                                why some screens feel premium and others
-                                feel off.
+                                why some screens feel premium and others feel off.
                             </p>
 
                         </div>
@@ -318,16 +253,15 @@
                     </article>
 
 
+                    <!-- WEEK 5 -->
 
-                    <!-- W5 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W5
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Design systems in Figma
@@ -344,16 +278,15 @@
                     </article>
 
 
+                    <!-- WEEK 6 -->
 
-                    <!-- W6 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W6
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Prototyping &amp; motion
@@ -369,25 +302,24 @@
                     </article>
 
 
+                    <!-- WEEK 7 -->
 
-                    <!-- W7 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W7
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Test, critique, iterate
                             </h2>
 
                             <p>
-                                Run usability tests, present your work for
-                                live critique, and turn raw feedback into
-                                sharper decisions.
+                                Run usability tests, present your work for live
+                                critique, and turn raw feedback into sharper
+                                decisions.
                             </p>
 
                         </div>
@@ -395,16 +327,15 @@
                     </article>
 
 
+                    <!-- WEEK 8 -->
 
-                    <!-- W8 -->
-
-                    <article class="week">
+                    <article class="week-item">
 
                         <div class="week-number">
                             W8
                         </div>
 
-                        <div class="week-information">
+                        <div class="week-content">
 
                             <h2>
                                 Portfolio &amp; the finish line
@@ -427,27 +358,121 @@
         </section>
 
 
+        <!-- =========================
+             EVERY WEEK
+        ========================== -->
 
-        <!-- ====================================
-             CTA
-        ===================================== -->
+        <section class="learning-section">
+
+            <div class="container learning-grid">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Every week
+                    </p>
+
+                    <h2>
+                        Learn.
+                        <em>Make.</em>
+                        Share.
+                    </h2>
+
+                </div>
+
+
+                <div class="learning-items">
+
+                    <div class="learning-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Live session
+                            </h3>
+
+                            <p>
+                                Learn the week's core concepts with a working
+                                designer.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learning-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Practical project
+                            </h3>
+
+                            <p>
+                                Put the ideas into practice through real
+                                design challenges.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="learning-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Group critique
+                            </h3>
+
+                            <p>
+                                Present your work and learn through
+                                constructive feedback.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
 
         <section class="final-cta">
 
             <div class="container">
 
-                <p class="section-label">
+                <p class="eyebrow">
                     Ready to learn?
                 </p>
 
                 <h2>
-                    Your eight weeks start here.
+                    Your eight weeks
+                    <em>start here.</em>
                 </h2>
 
-                <a
-                    href="enroll.html"
-                    class="primary-button"
-                >
+                <a href="enroll.html" class="primary-button">
                     Enroll now
                 </a>
 
@@ -458,22 +483,17 @@
     </main>
 
 
-
-    <!-- ========================================
+    <!-- =========================
          FOOTER
-    ========================================= -->
+    ========================== -->
 
     <footer class="site-footer">
 
         <div class="container footer-grid">
 
-
             <div class="footer-brand">
 
-                <a
-                    href="index.html"
-                    class="logo"
-                >
+                <a href="index.html" class="logo">
                     SKILLUP
                 </a>
 
@@ -550,7 +570,5 @@
 
     </footer>
 
-
 </body>
-
 </html>
