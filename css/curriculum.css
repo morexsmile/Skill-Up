@@ -47,87 +47,122 @@ textarea {
     margin: 0 auto;
 }
 
-
-/* =====================================================
+/* ========================================
    HEADER
-===================================================== */
+======================================== */
 
 .site-header {
-    width: 100%;
-    background: #F2F2F2;
-    border-bottom: 1px solid #dce5e1;
     position: relative;
-    z-index: 20;
+    z-index: 100;
+
+    background-color: #F8FAF9;
 }
 
 .navbar {
-    min-height: 78px;
+    min-height: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
+/* LOGO */
+
 .logo {
+    color: #102622;
+
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 25px;
+
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: -1px;
+
+    letter-spacing: -0.5px;
 }
+
+.logo span {
+    color: #038C65;
+}
+
+
+/* NAVIGATION */
 
 .desktop-navigation {
     display: flex;
     align-items: center;
+
     gap: 34px;
-    margin-left: auto;
-    margin-right: 38px;
 }
 
 .desktop-navigation a {
+    color: #536762;
+
     font-size: 14px;
     font-weight: 500;
+
     transition: color 0.2s ease;
 }
 
-.desktop-navigation a:hover,
-.desktop-navigation a.active {
+.desktop-navigation a:hover {
     color: #038C65;
 }
+
+
+/* HEADER BUTTON */
 
 .header-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
-    padding: 0 22px;
-    border-radius: 999px;
-    background: #84D9B1;
+
+    padding: 11px 22px;
+
+    background-color: #84D9B1;
     color: #102622;
+
+    border-radius: 30px;
+
     font-size: 14px;
     font-weight: 600;
-    transition: background 0.2s ease, transform 0.2s ease;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .header-button:hover {
-    background: #038C65;
-    color: #ffffff;
-    transform: translateY(-1px);
+    background-color: #038C65;
+    color: #FFFFFF;
 }
+
+
+/* ========================================
+   MOBILE MENU
+======================================== */
 
 .menu-toggle {
     display: none;
+
     width: 42px;
     height: 42px;
-    border: 0;
-    background: transparent;
+
+    background-color: transparent;
+
+    border: 1px solid #102622;
+    border-radius: 50%;
+
     cursor: pointer;
 }
 
 .menu-toggle span {
     display: block;
-    width: 22px;
-    height: 2px;
-    background: #102622;
-    margin: 5px auto;
+
+    width: 17px;
+    height: 1px;
+
+    margin: 4px auto;
+
+    background-color: #102622;
 }
 
 .mobile-navigation {
