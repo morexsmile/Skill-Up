@@ -1,0 +1,611 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F2F2F2;
+    color: #102622;
+    font-family: "DM Sans", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.container {
+    width: calc(100% - 80px);
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    width: 100%;
+    background: #F2F2F2;
+    border-bottom: 1px solid rgba(16, 38, 34, 0.12);
+    position: relative;
+    z-index: 20;
+}
+
+.navbar {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.desktop-navigation {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-left: auto;
+    margin-right: 38px;
+}
+
+.desktop-navigation a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.desktop-navigation a:hover,
+.desktop-navigation a.active {
+    color: #038C65;
+}
+
+.header-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 23px;
+    border-radius: 999px;
+    background: #84D9B1;
+    color: #102622;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.header-button:hover {
+    background: #038C65;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu-toggle span {
+    width: 22px;
+    height: 2px;
+    background: #102622;
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.mentors-hero {
+    background: #D8F2E6;
+    padding: 82px 0 86px;
+}
+
+.mentors-hero-content {
+    max-width: 820px;
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+    color: #038C65;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.mentors-hero h1 {
+    max-width: 850px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(52px, 6.2vw, 82px);
+    font-weight: 500;
+    line-height: 0.98;
+    letter-spacing: -3px;
+}
+
+.mentors-hero h1 em {
+    color: #038C65;
+    font-style: italic;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-top: 28px;
+    color: #38564F;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MENTORS SECTION
+========================================= */
+
+.mentors-section {
+    background: #D8F2E6;
+    padding: 0 0 110px;
+}
+
+.mentors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.mentor-card {
+    background: #F2F2F2;
+    border: 1px solid rgba(16, 38, 34, 0.1);
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.mentor-image {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+}
+
+.mentor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mentor-card:hover .mentor-image img {
+    transform: scale(1.025);
+}
+
+.mentor-info {
+    padding: 28px 30px 32px;
+}
+
+.mentor-role {
+    margin-bottom: 10px;
+    color: #038C65;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.mentor-info h2 {
+    margin-bottom: 12px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.mentor-description {
+    max-width: 490px;
+    color: #38564F;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.testimonials-section {
+    background: #F2F2F2;
+    padding: 110px 0;
+}
+
+.testimonials-heading {
+    margin-bottom: 55px;
+}
+
+.testimonials-heading h2 {
+    max-width: 700px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -2px;
+}
+
+.testimonials-heading h2 em {
+    color: #038C65;
+    font-style: italic;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.testimonial-card {
+    position: relative;
+    min-height: 280px;
+    padding: 38px 38px 34px;
+    background: #D8F2E6;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-mark {
+    display: block;
+    margin-bottom: 15px;
+    color: #038C65;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 54px;
+    line-height: 0.7;
+}
+
+.testimonial-text {
+    max-width: 500px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.testimonial-author {
+    margin-top: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.testimonial-author strong {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.testimonial-author span {
+    color: #527067;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.final-cta {
+    background: #102622;
+    color: #F2F2F2;
+    padding: 105px 0;
+    text-align: center;
+}
+
+.final-cta .eyebrow {
+    color: #84D9B1;
+}
+
+.final-cta h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(42px, 5.5vw, 68px);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -2px;
+}
+
+.final-cta h2 em {
+    color: #84D9B1;
+    font-style: italic;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    padding: 15px 25px;
+    border-radius: 999px;
+    background: #84D9B1;
+    color: #102622;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.primary-button:hover {
+    background: #038C65;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    background: #102622;
+    color: #F2F2F2;
+    border-top: 1px solid rgba(242, 242, 242, 0.12);
+}
+
+.footer-grid {
+    padding: 75px 0 65px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: 70px;
+}
+
+.footer-brand .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    max-width: 300px;
+    color: #AFC5BD;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 17px;
+    color: #84D9B1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.footer-links a,
+.footer-contact a,
+.footer-contact p {
+    margin-bottom: 9px;
+    color: #D4DFDB;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #84D9B1;
+}
+
+.footer-bottom {
+    min-height: 70px;
+    border-top: 1px solid rgba(242, 242, 242, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #829B92;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE — TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .desktop-navigation,
+    .header-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-navigation {
+        padding: 25px 40px 30px;
+        background: #F2F2F2;
+        border-top: 1px solid rgba(16, 38, 34, 0.08);
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .mobile-navigation.active,
+    .mobile-navigation.open {
+        display: flex;
+    }
+
+    .mobile-navigation a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .mobile-navigation-button {
+        width: 100%;
+        padding: 13px 20px;
+        border-radius: 999px;
+        background: #84D9B1;
+        text-align: center;
+        font-weight: 700 !important;
+    }
+
+    .mentors-hero {
+        padding: 65px 0 70px;
+    }
+
+    .mentors-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mentor-image {
+        height: 500px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .mobile-navigation {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mentors-hero {
+        padding: 55px 0 60px;
+    }
+
+    .mentors-hero h1 {
+        font-size: 47px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        margin-top: 22px;
+        font-size: 15px;
+    }
+
+    .mentors-section {
+        padding-bottom: 70px;
+    }
+
+    .mentor-image {
+        height: 390px;
+    }
+
+    .mentor-info {
+        padding: 24px;
+    }
+
+    .mentor-info h2 {
+        font-size: 29px;
+    }
+
+    .testimonials-section {
+        padding: 75px 0;
+    }
+
+    .testimonials-heading {
+        margin-bottom: 35px;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 40px;
+    }
+
+    .testimonial-card {
+        min-height: 300px;
+        padding: 30px;
+    }
+
+    .testimonial-text {
+        font-size: 20px;
+    }
+
+    .final-cta {
+        padding: 75px 0;
+    }
+
+    .final-cta h2 {
+        font-size: 43px;
+    }
+
+    .footer-grid {
+        padding: 55px 0 45px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
