@@ -18,7 +18,7 @@
     >
 
 
-    <!-- GOOGLE FONTS -->
+    <!-- FONTS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -85,7 +85,10 @@
                     Why Skillup
                 </a>
 
-                <a href="curriculum.html">
+                <a
+                    href="curriculum.html"
+                    class="active-link"
+                >
                     Curriculum
                 </a>
 
@@ -110,13 +113,11 @@
 
             <button
                 class="menu-toggle"
-                aria-label="Open menu"
                 type="button"
+                aria-label="Open menu"
             >
-
                 <span></span>
                 <span></span>
-
             </button>
 
         </div>
@@ -154,23 +155,28 @@
 
 
     <!-- ========================================
-         CURRICULUM
+         MAIN
     ========================================= -->
 
     <main>
 
-        <section class="curriculum">
 
-            <div class="container curriculum-grid">
+        <!-- ====================================
+             CURRICULUM SECTION
+        ===================================== -->
+
+        <section class="curriculum-section">
+
+            <div class="container curriculum-layout">
 
 
                 <!-- =================================
-                     LEFT SIDE
+                     LEFT COLUMN
                 ================================== -->
 
                 <div class="curriculum-intro">
 
-                    <p class="eyebrow">
+                    <p class="section-label">
                         02 — Curriculum
                     </p>
 
@@ -181,7 +187,7 @@
                     </h1>
 
 
-                    <p class="curriculum-description">
+                    <p class="intro-text">
                         Every week combines a live session, a hands-on
                         project, and a group critique. You build one
                         product from week one to week eight — so the
@@ -193,7 +199,7 @@
 
                         <img
                             src="assets/curriculum.jpg"
-                            alt="Designer sketching a digital product interface"
+                            alt="Designer working on a digital product"
                         >
 
                     </div>
@@ -203,21 +209,21 @@
 
 
                 <!-- =================================
-                     RIGHT SIDE
+                     RIGHT COLUMN
                 ================================== -->
 
-                <div class="weeks-list">
+                <div class="weeks">
 
 
-                    <!-- WEEK 1 -->
+                    <!-- W1 -->
 
-                    <article class="week-item active">
+                    <article class="week week-featured">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W1
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
                                 Thinking in products
@@ -235,15 +241,15 @@
 
 
 
-                    <!-- WEEK 2 -->
+                    <!-- W2 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W2
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
                                 Research that matters
@@ -261,15 +267,15 @@
 
 
 
-                    <!-- WEEK 3 -->
+                    <!-- W3 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W3
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
                                 From insight to concept
@@ -287,15 +293,15 @@
 
 
 
-                    <!-- WEEK 4 -->
+                    <!-- W4 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W4
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
                                 Visual foundations
@@ -313,15 +319,15 @@
 
 
 
-                    <!-- WEEK 5 -->
+                    <!-- W5 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W5
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
                                 Design systems in Figma
@@ -339,18 +345,18 @@
 
 
 
-                    <!-- WEEK 6 -->
+                    <!-- W6 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W6
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
-                                Prototyping & motion
+                                Prototyping &amp; motion
                             </h2>
 
                             <p>
@@ -364,23 +370,24 @@
 
 
 
-                    <!-- WEEK 7 -->
+                    <!-- W7 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W7
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
                                 Test, critique, iterate
                             </h2>
 
                             <p>
-                                Usability testing, feedback and refining
-                                your work based on evidence.
+                                Run usability tests, present your work for
+                                live critique, and turn raw feedback into
+                                sharper decisions.
                             </p>
 
                         </div>
@@ -389,23 +396,24 @@
 
 
 
-                    <!-- WEEK 8 -->
+                    <!-- W8 -->
 
-                    <article class="week-item">
+                    <article class="week">
 
-                        <span class="week-number">
+                        <div class="week-number">
                             W8
-                        </span>
+                        </div>
 
-                        <div class="week-content">
+                        <div class="week-information">
 
                             <h2>
-                                Portfolio & the finish line
+                                Portfolio &amp; the finish line
                             </h2>
 
                             <p>
-                                Turn your work into two strong case studies
-                                and prepare your final presentation.
+                                Package your two case studies, tell the story
+                                of your process, and leave ready for real
+                                applications.
                             </p>
 
                         </div>
@@ -420,15 +428,15 @@
 
 
 
-        <!-- ========================================
-             FINAL CTA
-        ========================================= -->
+        <!-- ====================================
+             CTA
+        ===================================== -->
 
         <section class="final-cta">
 
             <div class="container">
 
-                <p class="eyebrow">
+                <p class="section-label">
                     Ready to learn?
                 </p>
 
@@ -516,7 +524,7 @@
                 </a>
 
                 <p>
-                    Live sessions · Tue & Thu, CET
+                    Live sessions · Tue &amp; Thu, CET
                 </p>
 
                 <p>
@@ -544,4 +552,5 @@
 
 
 </body>
+
 </html>
