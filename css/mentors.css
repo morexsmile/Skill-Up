@@ -1,6 +1,7 @@
-/* =========================================
+
+/* ========================================
    RESET
-========================================= */
+======================================== */
 
 * {
     box-sizing: border-box;
@@ -13,9 +14,10 @@ html {
 }
 
 body {
-    background: #F2F2F2;
+    background-color: #F8FAF9;
     color: #102622;
     font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
 }
 
 img {
@@ -28,107 +30,138 @@ a {
     text-decoration: none;
 }
 
-button,
-input,
-textarea {
-    font: inherit;
+button {
+    font-family: "DM Sans", sans-serif;
 }
 
 .container {
     width: calc(100% - 80px);
-    max-width: 1180px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 
-/* =========================================
+/* ========================================
    HEADER
-========================================= */
+======================================== */
 
 .site-header {
-    width: 100%;
-    background: #F2F2F2;
-    border-bottom: 1px solid rgba(16, 38, 34, 0.12);
     position: relative;
-    z-index: 20;
+    z-index: 100;
+
+    background-color: #F8FAF9;
 }
 
 .navbar {
-    min-height: 78px;
+    min-height: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+
+/* LOGO */
+
 .logo {
+    color: #102622;
+
     font-family: "Playfair Display", Georgia, serif;
-    font-size: 25px;
-    font-weight: 600;
+
+    font-size: 20px;
+    font-weight: 700;
+
     letter-spacing: -0.5px;
 }
+
+.logo span {
+    color: #038C65;
+}
+
+
+/* NAVIGATION */
 
 .desktop-navigation {
     display: flex;
     align-items: center;
+
     gap: 34px;
-    margin-left: auto;
-    margin-right: 38px;
 }
 
 .desktop-navigation a {
+    color: #536762;
+
     font-size: 14px;
     font-weight: 500;
+
     transition: color 0.2s ease;
 }
 
-.desktop-navigation a:hover,
-.desktop-navigation a.active {
+.desktop-navigation a:hover {
     color: #038C65;
 }
+
+
+/* HEADER BUTTON */
 
 .header-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 44px;
-    padding: 0 23px;
-    border-radius: 999px;
-    background: #84D9B1;
+
+    padding: 11px 22px;
+
+    background-color: #84D9B1;
     color: #102622;
+
+    border-radius: 30px;
+
     font-size: 14px;
     font-weight: 600;
-    transition: background 0.2s ease, transform 0.2s ease;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .header-button:hover {
-    background: #038C65;
-    color: #ffffff;
-    transform: translateY(-1px);
+    background-color: #038C65;
+    color: #FFFFFF;
 }
+
+
+/* ========================================
+   MOBILE MENU
+======================================== */
 
 .menu-toggle {
     display: none;
+
     width: 42px;
     height: 42px;
-    border: 0;
-    background: transparent;
+
+    background-color: transparent;
+
+    border: 1px solid #102622;
+    border-radius: 50%;
+
     cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
 }
 
 .menu-toggle span {
-    width: 22px;
-    height: 2px;
-    background: #102622;
+    display: block;
+
+    width: 17px;
+    height: 1px;
+
+    margin: 4px auto;
+
+    background-color: #102622;
 }
 
 .mobile-navigation {
     display: none;
 }
-
 
 /* =========================================
    HERO
