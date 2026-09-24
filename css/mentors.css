@@ -1,4 +1,3 @@
-
 /* ========================================
    RESET
 ======================================== */
@@ -35,7 +34,7 @@ button {
 }
 
 .container {
-    width: calc(100% - 80px);
+    width: calc(100% - 110px);
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -46,15 +45,12 @@ button {
 ======================================== */
 
 .site-header {
-    position: relative;
-    z-index: 100;
-
     background-color: #F8FAF9;
+    border-top: 4px solid #102622;
 }
 
 .navbar {
-    min-height: 70px;
-
+    min-height: 66px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,12 +61,9 @@ button {
 
 .logo {
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 20px;
     font-weight: 700;
-
     letter-spacing: -0.5px;
 }
 
@@ -79,21 +72,18 @@ button {
 }
 
 
-/* NAVIGATION */
+/* DESKTOP NAVIGATION */
 
 .desktop-navigation {
     display: flex;
     align-items: center;
-
     gap: 34px;
 }
 
 .desktop-navigation a {
-    color: #536762;
-
+    color: #405650;
     font-size: 14px;
     font-weight: 500;
-
     transition: color 0.2s ease;
 }
 
@@ -108,17 +98,12 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    padding: 11px 22px;
-
+    padding: 11px 23px;
     background-color: #84D9B1;
     color: #102622;
-
     border-radius: 30px;
-
     font-size: 14px;
     font-weight: 600;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease;
@@ -136,26 +121,19 @@ button {
 
 .menu-toggle {
     display: none;
-
-    width: 42px;
-    height: 42px;
-
+    width: 40px;
+    height: 40px;
     background-color: transparent;
-
     border: 1px solid #102622;
     border-radius: 50%;
-
     cursor: pointer;
 }
 
 .menu-toggle span {
     display: block;
-
-    width: 17px;
+    width: 16px;
     height: 1px;
-
     margin: 4px auto;
-
     background-color: #102622;
 }
 
@@ -163,9 +141,14 @@ button {
     display: none;
 }
 
-/* =========================================
+.mobile-navigation.active {
+    display: flex;
+}
+
+
+/* ========================================
    HERO
-========================================= */
+======================================== */
 
 .mentors-hero {
     background: #D8F2E6;
@@ -208,9 +191,9 @@ button {
 }
 
 
-/* =========================================
+/* ========================================
    MENTORS SECTION
-========================================= */
+======================================== */
 
 .mentors-section {
     background: #D8F2E6;
@@ -276,9 +259,9 @@ button {
 }
 
 
-/* =========================================
+/* ========================================
    TESTIMONIALS
-========================================= */
+======================================== */
 
 .testimonials-section {
     background: #F2F2F2;
@@ -354,9 +337,9 @@ button {
 }
 
 
-/* =========================================
+/* ========================================
    FINAL CTA
-========================================= */
+======================================== */
 
 .final-cta {
     background: #102622;
@@ -395,7 +378,9 @@ button {
     color: #102622;
     font-size: 14px;
     font-weight: 700;
-    transition: background 0.2s ease, transform 0.2s ease;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 .primary-button:hover {
@@ -405,9 +390,9 @@ button {
 }
 
 
-/* =========================================
+/* ========================================
    FOOTER
-========================================= */
+======================================== */
 
 .site-footer {
     background: #102622;
@@ -425,6 +410,7 @@ button {
 .footer-brand .logo {
     display: inline-block;
     margin-bottom: 16px;
+    color: #FFFFFF;
 }
 
 .footer-brand p {
@@ -480,11 +466,15 @@ button {
 }
 
 
-/* =========================================
+/* ========================================
    RESPONSIVE — TABLET
-========================================= */
+======================================== */
 
 @media (max-width: 900px) {
+
+    .container {
+        width: calc(100% - 60px);
+    }
 
     .desktop-navigation,
     .header-button {
@@ -492,34 +482,33 @@ button {
     }
 
     .menu-toggle {
-        display: flex;
+        display: block;
     }
 
     .mobile-navigation {
-        padding: 25px 40px 30px;
-        background: #F2F2F2;
-        border-top: 1px solid rgba(16, 38, 34, 0.08);
+        display: none;
         flex-direction: column;
         gap: 18px;
+        padding: 22px 30px;
+        background-color: #F8FAF9;
+        border-top: 1px solid #D8E2DE;
     }
 
-    .mobile-navigation.active,
-    .mobile-navigation.open {
+    .mobile-navigation.active {
         display: flex;
     }
 
     .mobile-navigation a {
-        font-size: 16px;
-        font-weight: 500;
+        color: #102622;
+        font-size: 15px;
+        font-weight: 600;
     }
 
     .mobile-navigation-button {
-        width: 100%;
-        padding: 13px 20px;
-        border-radius: 999px;
-        background: #84D9B1;
-        text-align: center;
-        font-weight: 700 !important;
+        width: fit-content;
+        padding: 10px 20px;
+        background-color: #84D9B1;
+        border-radius: 30px;
     }
 
     .mentors-hero {
@@ -543,22 +532,21 @@ button {
     .footer-brand {
         grid-column: 1 / -1;
     }
-
 }
 
 
-/* =========================================
+/* ========================================
    RESPONSIVE — MOBILE
-========================================= */
+======================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .container {
-        width: calc(100% - 40px);
+        width: calc(100% - 36px);
     }
 
     .navbar {
-        min-height: 70px;
+        min-height: 66px;
     }
 
     .mobile-navigation {
@@ -640,5 +628,4 @@ button {
         align-items: flex-start;
         flex-direction: column;
     }
-
 }
