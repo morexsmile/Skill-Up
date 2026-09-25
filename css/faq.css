@@ -1,7 +1,4 @@
-/* =========================================
-   RESET
-========================================= */
-
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,10 +25,7 @@ button {
     font-family: inherit;
 }
 
-
-/* =========================================
-   CONTAINER
-========================================= */
+/* CONTAINER */
 
 .container {
     width: calc(100% - 110px);
@@ -39,12 +33,7 @@ button {
     margin: 0 auto;
 }
 
-
-/* =========================================
-   HEADER
-   NO TOCAR
-========================================= */
-
+/* HEADER */
 .site-header {
     background-color: #F8FAF9;
     border-top: 4px solid #102622;
@@ -106,10 +95,7 @@ button {
     color: #F2F2F2;
 }
 
-
-/* =========================================
-   MOBILE MENU
-========================================= */
+/* MOBILE MENU */
 
 .menu-toggle {
     display: none;
@@ -137,10 +123,7 @@ button {
     display: flex;
 }
 
-
-/* =========================================
-   FAQ MAIN
-========================================= */
+/* MAIN */
 
 .faq-section {
     padding: 95px 0 125px;
@@ -169,11 +152,6 @@ button {
     letter-spacing: -1.5px;
 }
 
-
-/* =========================================
-   FAQ ACCORDION
-========================================= */
-
 .faq-list {
     max-width: 900px;
     border-top: 1px solid #C9D8D2;
@@ -190,14 +168,10 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-
     padding: 24px 0;
-
     background-color: transparent;
     border: 0;
-
     color: #102622;
-
     cursor: pointer;
     text-align: left;
 }
@@ -214,20 +188,15 @@ button {
 
 .faq-icon {
     flex-shrink: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 30px;
     height: 30px;
-
     color: #038C65;
-
     font-size: 27px;
     font-weight: 300;
     line-height: 1;
-
     transition: transform 0.25s ease;
 }
 
@@ -235,17 +204,10 @@ button {
     transform: rotate(45deg);
 }
 
-
-/* =========================================
-   FAQ ANSWER
-========================================= */
-
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-
     padding: 0;
-
     transition:
         max-height 0.35s ease,
         padding 0.35s ease;
@@ -253,11 +215,8 @@ button {
 
 .faq-answer p {
     max-width: 760px;
-
     padding-right: 60px;
-
     color: #405650;
-
     font-size: 15px;
     line-height: 1.75;
 }
@@ -267,11 +226,7 @@ button {
     padding-bottom: 28px;
 }
 
-
-/* =========================================
-   FOOTER
-   NO TOCAR
-========================================= */
+/* FOOTER */
 
 .site-footer {
     padding: 80px 0 30px;
@@ -347,10 +302,7 @@ button {
     font-size: 12px;
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -365,16 +317,10 @@ button {
     .footer-grid {
         gap: 40px;
     }
-
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
-
+/* MOBILE */
 @media (max-width: 700px) {
-
     .container {
         width: calc(100% - 36px);
     }
@@ -407,9 +353,7 @@ button {
         font-weight: 600;
     }
 
-
     /* FAQ */
-
     .faq-section {
         padding: 70px 0 90px;
     }
@@ -437,9 +381,7 @@ button {
         font-size: 15px;
     }
 
-
     /* FOOTER */
-
     .site-footer {
         padding-top: 60px;
     }
@@ -455,5 +397,4 @@ button {
         align-items: flex-start;
         gap: 8px;
     }
-
 }
