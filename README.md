@@ -27,11 +27,11 @@ Features
 - Multi-page navigation
 - Interactive FAQ accordion
 - Course registration form
- -Experience selection buttons
- -Responsive mentor and curriculum sections
- -Custom favicon
- -Consistent header and footer across pages
- -Hover and transition effects
+- Experience selection buttons
+- Responsive mentor and curriculum sections
+- Custom favicon
+- Consistent header and footer across pages
+- Hover and transition effects
 - Semantic HTML structure
 - Vanilla JavaScript without frameworks
 - Tech stack
@@ -42,7 +42,9 @@ Features
 - Google Fonts
 - GitHub Pages
 
+
 The project uses vanilla HTML, CSS and JavaScript to keep the code lightweight and easy to understand. The repository is structured around separate HTML, CSS and JavaScript files.
+
 
 Color palette
 - Dark green	#102622
@@ -51,9 +53,11 @@ Color palette
 - Light mint	#D8F2E6
 - Light gray	#F2F2F2
 
+
 Typography
 - Playfair Display - large headings and brand styling
 - DM Sans - body copy, navigation and interface elements
+
 
 The design uses generous whitespace, rounded elements, muted backgrounds and green accent colors to create a clean premium education aesthetic.
 Responsive design
