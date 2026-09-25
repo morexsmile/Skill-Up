@@ -1,7 +1,4 @@
-/* ========================================
-   RESET
-======================================== */
-
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,11 +36,7 @@ button {
     margin: 0 auto;
 }
 
-
-/* ========================================
-   HEADER
-======================================== */
-
+/* HEADER */
 .site-header {
     background-color: #F8FAF9;
     border-top: 4px solid #102622;
@@ -56,9 +49,7 @@ button {
     justify-content: space-between;
 }
 
-
 /* LOGO */
-
 .logo {
     color: #102622;
     font-family: "Playfair Display", Georgia, serif;
@@ -71,9 +62,7 @@ button {
     color: #038C65;
 }
 
-
 /* DESKTOP NAVIGATION */
-
 .desktop-navigation {
     display: flex;
     align-items: center;
@@ -91,9 +80,7 @@ button {
     color: #038C65;
 }
 
-
 /* HEADER BUTTON */
-
 .header-button {
     display: inline-flex;
     align-items: center;
@@ -114,10 +101,7 @@ button {
     color: #FFFFFF;
 }
 
-
-/* ========================================
-   MOBILE MENU
-======================================== */
+/* MOBILE MENU */
 
 .menu-toggle {
     display: none;
@@ -145,10 +129,7 @@ button {
     display: flex;
 }
 
-
-/* ========================================
-   HERO
-======================================== */
+/* HERO */
 
 .mentors-hero {
     background: #D8F2E6;
@@ -190,10 +171,7 @@ button {
     line-height: 1.7;
 }
 
-
-/* ========================================
-   MENTORS SECTION
-======================================== */
+/* MENTORS SECTION */
 
 .mentors-section {
     background: #D8F2E6;
@@ -258,13 +236,7 @@ button {
     line-height: 1.65;
 }
 
-
-
-
-/* ========================================
-   FINAL CTA
-======================================== */
-
+/* FINAL CTA */
 .final-cta {
     background: #102622;
     color: #F2F2F2;
@@ -313,10 +285,7 @@ button {
     transform: translateY(-2px);
 }
 
-
-/* ========================================
-   FOOTER
-======================================== */
+/* FOOTER */
 
 .site-footer {
     background: #102622;
@@ -389,10 +358,7 @@ button {
     font-size: 12px;
 }
 
-
-/* ========================================
-   RESPONSIVE — TABLET
-======================================== */
+/* RESPONSIVE — TABLET */
 
 @media (max-width: 900px) {
 
@@ -459,9 +425,7 @@ button {
 }
 
 
-/* ========================================
-   RESPONSIVE — MOBILE
-======================================== */
+/* RESPONSIVE — MOBILE */
 
 @media (max-width: 700px) {
 
