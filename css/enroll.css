@@ -32,6 +32,7 @@ textarea {
 
 /* =========================================================
    CONTAINER
+   — zostawiamy dotychczasowy header/footer
 ========================================================= */
 
 .container {
@@ -43,17 +44,16 @@ textarea {
 
 /* =========================================================
    HEADER
+   — BEZ ZMIAN
 ========================================================= */
 
 .site-header {
     background-color: #F8FAF9;
-    border-top: 1px solid #102622;
-    border-bottom: 1px solid #D5E0DC;
+    border-top: 4px solid #102622;
 }
 
 .navbar {
-    min-height: 65px;
-
+    min-height: 66px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +81,6 @@ textarea {
     color: #405650;
     font-size: 14px;
     font-weight: 500;
-
     transition: color 0.2s ease;
 }
 
@@ -121,6 +120,7 @@ textarea {
     height: 40px;
 
     background-color: transparent;
+
     border: 1px solid #102622;
     border-radius: 50%;
 
@@ -148,6 +148,7 @@ textarea {
 
 
 /* =========================================================
+   MAIN
    REGISTRATION
 ========================================================= */
 
@@ -156,10 +157,12 @@ textarea {
 }
 
 
-/* Big mint panel */
+/* ---------------------------------------------------------
+   MINT PANEL
+--------------------------------------------------------- */
 
 .registration-panel {
-    width: calc(100% - 80px);
+    width: calc(100% - 82px);
     max-width: 1104px;
 
     min-height: 850px;
@@ -171,25 +174,28 @@ textarea {
     background-color: #D8F2E6;
 
     border: 1px solid #C9E4D8;
+
     border-radius: 40px 40px 0 0;
 }
 
 
-/* Two columns */
+/* ---------------------------------------------------------
+   TWO COLUMNS
+--------------------------------------------------------- */
 
 .registration-grid {
     display: grid;
 
     grid-template-columns: minmax(0, 1fr) 455px;
 
-    gap: 90px;
+    column-gap: 70px;
 
     align-items: start;
 }
 
 
 /* =========================================================
-   LEFT COLUMN
+   LEFT SIDE
 ========================================================= */
 
 .registration-left {
@@ -197,7 +203,7 @@ textarea {
 }
 
 .section-label {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 
     color: #038C65;
 
@@ -205,25 +211,26 @@ textarea {
     font-weight: 600;
 
     letter-spacing: 2px;
+
     text-transform: uppercase;
 }
 
 
 .registration-left h1 {
-    max-width: 510px;
+    max-width: 520px;
 
-    margin-bottom: 28px;
+    margin-bottom: 27px;
 
     color: #102622;
 
     font-family: "Playfair Display", Georgia, serif;
 
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 500;
 
     line-height: 1.08;
 
-    letter-spacing: -1.6px;
+    letter-spacing: -1.7px;
 }
 
 
@@ -237,9 +244,9 @@ textarea {
 
 
 .intro-text {
-    max-width: 520px;
+    max-width: 525px;
 
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     color: #405F57;
 
@@ -249,7 +256,9 @@ textarea {
 }
 
 
-/* Checklist */
+/* =========================================================
+   CHECKLIST
+========================================================= */
 
 .registration-details {
     display: flex;
@@ -298,13 +307,13 @@ textarea {
 
 
 /* =========================================================
-   FORM CARD
+   RIGHT FORM CARD
 ========================================================= */
 
 .registration-card {
     width: 455px;
 
-    padding: 34px 32px 24px;
+    padding: 34px 32px 25px;
 
     background-color: #FFFFFF;
 
@@ -347,7 +356,7 @@ textarea {
    FORM
 ========================================================= */
 
-#registration-form {
+.registration-form {
     display: flex;
     flex-direction: column;
 
@@ -384,7 +393,9 @@ textarea {
 }
 
 
-/* Inputs */
+/* ---------------------------------------------------------
+   INPUTS
+--------------------------------------------------------- */
 
 .form-field input,
 .form-field textarea {
@@ -402,9 +413,7 @@ textarea {
 
     font-size: 13px;
 
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: border-color 0.2s ease;
 }
 
 
@@ -439,8 +448,6 @@ textarea {
 .form-field input:focus,
 .form-field textarea:focus {
     border-color: #84D9B1;
-
-    box-shadow: 0 0 0 2px rgba(132, 217, 177, 0.12);
 }
 
 
@@ -520,7 +527,7 @@ textarea {
 
 
 /* =========================================================
-   SUBMIT BUTTON
+   SUBMIT
 ========================================================= */
 
 .submit-button {
@@ -532,6 +539,7 @@ textarea {
     background-color: #84D9B1;
 
     border: 0;
+
     border-radius: 24px;
 
     color: #102622;
@@ -541,19 +549,12 @@ textarea {
 
     cursor: pointer;
 
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
 
 .submit-button:hover {
     background-color: #6CCFA4;
-}
-
-
-.submit-button:active {
-    transform: translateY(1px);
 }
 
 
@@ -572,6 +573,7 @@ textarea {
 
 /* =========================================================
    FOOTER
+   — BEZ ZMIAN
 ========================================================= */
 
 .site-footer {
@@ -671,38 +673,49 @@ textarea {
 
 
 /* =========================================================
-   TABLET
+   RESPONSIVE
 ========================================================= */
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
+
+    .container {
+        width: calc(100% - 60px);
+    }
+
 
     .registration-panel {
-        width: calc(100% - 50px);
+        width: calc(100% - 60px);
 
         padding: 45px;
     }
 
-    .registration-grid {
-        grid-template-columns: minmax(0, 1fr) 420px;
 
-        gap: 45px;
+    .registration-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
     }
+
 
     .registration-card {
-        width: 420px;
+        width: 100%;
+
+        max-width: 455px;
     }
 
-    .registration-left h1 {
-        font-size: 43px;
+
+    .desktop-navigation {
+        gap: 20px;
+    }
+
+
+    .footer-grid {
+        gap: 40px;
     }
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 800px) {
+@media (max-width: 700px) {
 
     .container {
         width: calc(100% - 36px);
@@ -766,8 +779,6 @@ textarea {
 
 
     .registration-grid {
-        grid-template-columns: 1fr;
-
         gap: 42px;
     }
 
