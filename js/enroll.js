@@ -36,13 +36,6 @@ if (registrationForm) {
             return;
         }
 
-        /*
-            The reference design does not replace the button
-            or change the layout after submission.
-
-            For now we simply prevent the page from reloading.
-        */
-
     });
 
 }
