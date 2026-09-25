@@ -1,9 +1,4 @@
-
-
-/* ========================================
-   RESET
-======================================== */
-
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -41,37 +36,28 @@ button {
     margin: 0 auto;
 }
 
-
-/* ========================================
-   HEADER
-======================================== */
+/* HEADER */
 
 .site-header {
     position: relative;
     z-index: 100;
-
     background-color: #F8FAF9;
 }
 
 .navbar {
     min-height: 70px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
 /* LOGO */
 
 .logo {
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
-
     font-size: 20px;
     font-weight: 700;
-
     letter-spacing: -0.5px;
 }
 
@@ -79,22 +65,18 @@ button {
     color: #038C65;
 }
 
-
 /* NAVIGATION */
 
 .desktop-navigation {
     display: flex;
     align-items: center;
-
     gap: 34px;
 }
 
 .desktop-navigation a {
     color: #536762;
-
     font-size: 14px;
     font-weight: 500;
-
     transition: color 0.2s ease;
 }
 
@@ -102,24 +84,18 @@ button {
     color: #038C65;
 }
 
-
 /* HEADER BUTTON */
 
 .header-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: 11px 22px;
-
     background-color: #84D9B1;
     color: #102622;
-
     border-radius: 30px;
-
     font-size: 14px;
     font-weight: 600;
-
     transition:
         background-color 0.2s ease,
         color 0.2s ease;
@@ -130,33 +106,23 @@ button {
     color: #FFFFFF;
 }
 
-
-/* ========================================
-   MOBILE MENU
-======================================== */
+/* MOBILE MENU */
 
 .menu-toggle {
     display: none;
-
     width: 42px;
     height: 42px;
-
     background-color: transparent;
-
     border: 1px solid #102622;
     border-radius: 50%;
-
     cursor: pointer;
 }
 
 .menu-toggle span {
     display: block;
-
     width: 17px;
     height: 1px;
-
     margin: 4px auto;
-
     background-color: #102622;
 }
 
@@ -164,19 +130,7 @@ button {
     display: none;
 }
 
-
-/* =====================================================
-   CURRICULUM SECTION
-
-   THIS IS THE IMPORTANT PART
-
-   LEFT:
-   text + image
-
-   RIGHT:
-   W1 — W8
-===================================================== */
-
+/* CURRICULUM SECTION */
 .curriculum-section {
     background: #D8F2E6;
     min-height: 900px;
@@ -187,26 +141,13 @@ button {
     width: calc(100% - 80px);
     max-width: 1100px;
     margin: 0 auto;
-
     display: grid;
-
-    /*
-       LEFT = 445px
-       RIGHT = remaining space
-
-       This prevents the image from becoming huge.
-    */
     grid-template-columns: 445px minmax(0, 1fr);
-
     gap: 56px;
-
     align-items: start;
 }
 
-
-/* =====================================================
-   LEFT SIDE
-===================================================== */
+/* LEFT SIDE */
 
 .curriculum-left {
     min-width: 0;
@@ -224,14 +165,11 @@ button {
 
 .curriculum-left h1 {
     max-width: 445px;
-
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
     font-size: 48px;
     font-weight: 500;
     line-height: 1.08;
-
     letter-spacing: -1.5px;
 }
 
@@ -243,30 +181,20 @@ button {
 
 .curriculum-intro {
     max-width: 445px;
-
     margin-top: 14px;
-
     color: #102622;
-
     font-size: 15px;
     font-weight: 400;
     line-height: 1.55;
 }
 
 
-/* =====================================================
-   CURRICULUM IMAGE
-
-   IMPORTANT:
-   Fixed width/height so it matches the reference.
-===================================================== */
+/* CURRICULUM IMAGE */
 
 .curriculum-image {
     width: 445px;
     height: 520px;
-
     margin-top: 8px;
-
     overflow: hidden;
       border-radius: 22px;
 }
@@ -274,92 +202,59 @@ button {
 .curriculum-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     object-position: center;
-
     display: block;
 }
 
-
-/* =====================================================
-   RIGHT SIDE
-===================================================== */
+/* RIGHT SIDE */
 
 .curriculum-right {
     width: 100%;
     min-width: 0;
 }
 
-
-/* =====================================================
-   WEEK ROW
-===================================================== */
+/* WEEK ROW */
 
 .week-item {
     width: 100%;
-
     display: grid;
-
     grid-template-columns: 72px minmax(0, 1fr);
-
     column-gap: 18px;
-
     padding: 28px 22px;
-
     border-bottom: 1px solid rgba(16, 38, 34, 0.18);
-
     background: transparent;
-
     transition: background 0.2s ease;
 }
 
-
-/* ŻADNEGO stałego białego tła */
-
 .week-item.week-featured {
     background: transparent;
-
     border: 0;
     border-bottom: 1px solid rgba(16, 38, 34, 0.18);
-
     padding: 28px 22px;
-
     margin-bottom: 0;
 }
-
-
-/* KAŻDY tydzień robi się biały po najechaniu */
 
 .week-item:hover {
     background: #FFFFFF;
 }
 
-/* =====================================================
-   WEEK NUMBER
-===================================================== */
+/* WEEK NUMBER */
 
 .week-number {
     width: 48px;
     height: 48px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: #84D9B1;
     color: #102622;
-
     font-size: 12px;
     font-weight: 700;
 }
 
-
-/* =====================================================
-   WEEK CONTENT
-===================================================== */
+/* WEEK CONTENT */
 
 .week-content {
     min-width: 0;
@@ -367,29 +262,22 @@ button {
 
 .week-content h2 {
     color: #102622;
-
     font-family: "Playfair Display", Georgia, serif;
     font-size: 23px;
     font-weight: 500;
     line-height: 1.18;
-
     margin-bottom: 8px;
 }
 
 .week-content p {
     max-width: 470px;
-
     color: #38564f;
-
     font-size: 14px;
     font-weight: 400;
     line-height: 1.55;
 }
 
-
-/* =====================================================
-   LEARNING SECTION
-===================================================== */
+/* LEARNING SECTION */
 
 .learning-section {
     background: #F2F2F2;
@@ -423,9 +311,7 @@ button {
     display: grid;
     grid-template-columns: 55px 1fr;
     gap: 20px;
-
     padding: 26px 0;
-
     border-bottom: 1px solid #cbd8d3;
 }
 
@@ -448,10 +334,7 @@ button {
     line-height: 1.6;
 }
 
-
-/* =====================================================
-   FINAL CTA
-===================================================== */
+/* FINAL CTA */
 
 .final-cta {
     background: #102622;
@@ -467,7 +350,6 @@ button {
 .final-cta h2 {
     max-width: 700px;
     margin: 0 auto 35px;
-
     font-family: "Playfair Display", Georgia, serif;
     font-size: 58px;
     font-weight: 400;
@@ -483,19 +365,13 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-height: 52px;
-
     padding: 0 28px;
-
     border-radius: 999px;
-
     background: #84D9B1;
     color: #102622;
-
     font-size: 14px;
     font-weight: 700;
-
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
@@ -504,17 +380,12 @@ button {
     transform: translateY(-2px);
 }
 
-
-/* =====================================================
-   FOOTER
-===================================================== */
+/* FOOTER */
 
 .site-footer {
     background: #102622;
     color: #F2F2F2;
-
     border-top: 1px solid rgba(255, 255, 255, 0.12);
-
     padding: 70px 0 25px;
 }
 
@@ -546,12 +417,9 @@ button {
 .footer-links h3,
 .footer-contact h3 {
     margin-bottom: 18px;
-
     color: #84D9B1;
-
     font-size: 12px;
     font-weight: 700;
-
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -559,9 +427,7 @@ button {
 .footer-links a,
 .footer-contact a {
     margin-bottom: 9px;
-
     color: #F2F2F2;
-
     font-size: 14px;
 }
 
@@ -572,9 +438,7 @@ button {
 
 .footer-contact p {
     margin-top: 8px;
-
     color: #b9cbc5;
-
     font-size: 13px;
 }
 
@@ -582,10 +446,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-top: 55px;
     padding-top: 22px;
-
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -594,10 +456,7 @@ button {
     font-size: 12px;
 }
 
-
-/* =====================================================
-   TABLET
-===================================================== */
+/* TABLET */
 
 @media (max-width: 1050px) {
 
@@ -609,11 +468,8 @@ button {
    .curriculum-image {
     width: 445px;
     height: 520px;
-
     margin-top: 8px;
-
     overflow: hidden;
-
     border-radius: 22px;
 }
 
@@ -632,13 +488,9 @@ button {
         width: 44px;
         height: 44px;
     }
-
 }
 
-
-/* =====================================================
-   MOBILE NAVIGATION
-===================================================== */
+/* MOBILE NAVIGATION */
 
 @media (max-width: 850px) {
 
@@ -653,15 +505,10 @@ button {
 
     .mobile-navigation {
         display: none;
-
         flex-direction: column;
-
         gap: 0;
-
         padding: 10px 20px 25px;
-
         background: #F2F2F2;
-
         border-top: 1px solid #dce5e1;
     }
 
@@ -672,25 +519,18 @@ button {
 
     .mobile-navigation a {
         padding: 14px 0;
-
         border-bottom: 1px solid #dce5e1;
-
         font-size: 15px;
     }
 
     .mobile-navigation-button {
         display: flex;
-
         align-items: center;
         justify-content: center;
-
         margin-top: 15px;
-
         padding: 13px 20px !important;
-
         border: 0 !important;
         border-radius: 999px;
-
         background: #84D9B1;
         color: #102622;
         font-weight: 600;
@@ -698,9 +538,7 @@ button {
 
     .curriculum-container {
         width: calc(100% - 48px);
-
         grid-template-columns: 1fr;
-
         gap: 60px;
     }
 
@@ -726,16 +564,11 @@ button {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
-
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
+/* SMALL MOBILE */
 
 @media (max-width: 600px) {
-
     .container {
         width: calc(100% - 40px);
     }
@@ -769,7 +602,6 @@ button {
     .week-item.week-featured {
         grid-template-columns: 52px minmax(0, 1fr);
         column-gap: 12px;
-
         padding: 23px 12px;
     }
 
@@ -813,5 +645,4 @@ button {
         align-items: flex-start;
         gap: 8px;
     }
-
 }
