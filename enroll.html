@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -42,7 +43,7 @@
 
     <!-- =========================================
          HEADER
-         KEEP EXACTLY AS IT IS
+         EXACTLY THE SAME AS OTHER PAGES
     ========================================== -->
 
     <header class="site-header">
@@ -56,7 +57,6 @@
             >
                 Skillup<span>.</span>
             </a>
-
 
             <nav class="desktop-navigation">
 
@@ -78,14 +78,12 @@
 
             </nav>
 
-
             <a
                 href="enroll.html"
                 class="header-button"
             >
                 Enroll now
             </a>
-
 
             <button
                 class="menu-toggle"
@@ -128,7 +126,8 @@
 
 
     <!-- =========================================
-         MAIN — REGISTRATION
+         MAIN
+         REGISTRATION
     ========================================== -->
 
     <main>
@@ -138,9 +137,9 @@
             <div class="container">
 
 
-                <!-- TOP INTRO -->
+                <!-- INTRO -->
 
-                <div class="registration-heading">
+                <div class="registration-intro">
 
                     <p class="section-label">
                         04 — Registration
@@ -148,10 +147,11 @@
 
                     <h1>
                         Reserve your seat for
-                        <em>Digital Product Design</em>
+                        <br>
+                        <span>Digital Product Design</span>
                     </h1>
 
-                    <p class="registration-intro">
+                    <p class="intro-text">
                         Cohorts stay small on purpose — every student
                         presents their work and gets personal feedback,
                         every single week.
@@ -161,70 +161,78 @@
 
 
 
-                <!-- REGISTRATION CONTENT -->
+                <!-- REGISTRATION GRID -->
 
-                <div class="registration-layout">
+                <div class="registration-grid">
 
 
-                    <!-- LEFT SIDE -->
+                    <!-- LEFT -->
 
-                    <div class="registration-info">
+                    <div class="registration-left">
 
-                        <ul class="registration-details">
+                        <div class="registration-details">
 
-                            <li>
-                                <span class="check">
+                            <div class="detail-item">
+
+                                <span class="detail-check">
                                     ✓
                                 </span>
 
-                                <span>
+                                <p>
                                     Cohort starts Monday,
                                     Nov 2, 2026
-                                </span>
-                            </li>
+                                </p>
+
+                            </div>
 
 
-                            <li>
-                                <span class="check">
+                            <div class="detail-item">
+
+                                <span class="detail-check">
                                     ✓
                                 </span>
 
-                                <span>
+                                <p>
                                     Live sessions twice a week,
                                     evenings CET
-                                </span>
-                            </li>
+                                </p>
+
+                            </div>
 
 
-                            <li>
-                                <span class="check">
+                            <div class="detail-item">
+
+                                <span class="detail-check">
                                     ✓
                                 </span>
 
-                                <span>
+                                <p>
                                     Small-group critiques —
                                     capped at 24 seats
-                                </span>
-                            </li>
+                                </p>
+
+                            </div>
 
 
-                            <li>
-                                <span class="check">
+                            <div class="detail-item">
+
+                                <span class="detail-check">
                                     ✓
                                 </span>
 
-                                <span>
+                                <p>
                                     Certificate + final portfolio
                                     review included
-                                </span>
-                            </li>
+                                </p>
 
-                        </ul>
+                            </div>
+
+                        </div>
 
 
-                        <div class="registration-note">
+                        <div class="registration-message">
 
-                            <span class="note-number">
+                            <span>
                                 04
                             </span>
 
@@ -239,29 +247,28 @@
 
 
 
-                    <!-- RIGHT SIDE — FORM -->
+                    <!-- RIGHT -->
 
-                    <div class="registration-form-wrapper">
+                    <div class="registration-card">
 
-                        <div class="form-header">
+                        <p class="card-label">
+                            Course registration
+                        </p>
 
-                            <p class="form-eyebrow">
-                                Course registration
-                            </p>
-
-                            <h2>
-                                Digital Product Design
-                            </h2>
-
-                        </div>
+                        <h2>
+                            Digital Product Design
+                        </h2>
 
 
-                        <form class="registration-form">
+                        <form
+                            id="registration-form"
+                            class="registration-form"
+                        >
 
 
-                            <!-- FULL NAME -->
+                            <!-- NAME -->
 
-                            <div class="form-group">
+                            <div class="form-field">
 
                                 <label for="full-name">
                                     Full name
@@ -278,10 +285,9 @@
                             </div>
 
 
-
                             <!-- EMAIL -->
 
-                            <div class="form-group">
+                            <div class="form-field">
 
                                 <label for="email">
                                     Email
@@ -298,25 +304,25 @@
                             </div>
 
 
-
                             <!-- EXPERIENCE -->
 
-                            <fieldset class="form-group">
+                            <fieldset class="form-field experience-field">
 
                                 <legend>
                                     Where are you starting from?
                                 </legend>
 
 
-                                <div class="experience-options">
+                                <div class="experience-buttons">
 
 
-                                    <label class="experience-option">
+                                    <label class="experience-button">
 
                                         <input
                                             type="radio"
                                             name="experience"
                                             value="new"
+                                            required
                                         >
 
                                         <span>
@@ -326,7 +332,7 @@
                                     </label>
 
 
-                                    <label class="experience-option">
+                                    <label class="experience-button">
 
                                         <input
                                             type="radio"
@@ -341,7 +347,7 @@
                                     </label>
 
 
-                                    <label class="experience-option">
+                                    <label class="experience-button">
 
                                         <input
                                             type="radio"
@@ -360,14 +366,18 @@
                             </fieldset>
 
 
-
                             <!-- PORTFOLIO -->
 
-                            <div class="form-group">
+                            <div class="form-field">
 
                                 <label for="portfolio">
+
                                     Portfolio or LinkedIn
-                                    <span>(optional)</span>
+
+                                    <span>
+                                        (optional)
+                                    </span>
+
                                 </label>
 
                                 <input
@@ -380,38 +390,25 @@
                             </div>
 
 
-
-                            <!-- GOAL -->
-
-                            <div class="form-group">
-
-                                <label for="goal">
-                                    What do you want to be able
-                                    to do after this course?
-                                </label>
-
-                                <textarea
-                                    id="goal"
-                                    name="goal"
-                                    rows="4"
-                                ></textarea>
-
-                            </div>
-
-
-
                             <!-- SUBMIT -->
 
                             <button
                                 type="submit"
                                 class="submit-button"
                             >
-                                Reserve my seat
-                                <span>→</span>
+
+                                <span>
+                                    Reserve my seat
+                                </span>
+
+                                <span>
+                                    →
+                                </span>
+
                             </button>
 
 
-                            <p class="form-disclaimer">
+                            <p class="form-note">
                                 No payment now. We'll confirm your
                                 seat by email within 24 hours.
                             </p>
@@ -432,13 +429,12 @@
 
     <!-- =========================================
          FOOTER
-         KEEP EXACTLY AS IT IS
+         EXACTLY THE SAME AS OTHER PAGES
     ========================================== -->
 
     <footer class="site-footer">
 
         <div class="container footer-grid">
-
 
             <div class="footer-brand">
 
@@ -523,5 +519,8 @@
     </footer>
 
 
+    <script src="js/enroll.js"></script>
+
 </body>
+
 </html>
