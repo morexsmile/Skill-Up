@@ -51,9 +51,7 @@ button {
     justify-content: space-between;
 }
 
-
 /* LOGO */
-
 .logo {
     color: #102622;
     font-family: "Playfair Display", Georgia, serif;
@@ -66,9 +64,7 @@ button {
     color: #038C65;
 }
 
-
 /* DESKTOP NAVIGATION */
-
 .desktop-navigation {
     display: flex;
     align-items: center;
@@ -216,7 +212,6 @@ button {
 }
 
 /* NUMBER */
-
 .reason-number {
     display: block;
     margin-bottom: 25px;
@@ -252,7 +247,6 @@ button {
 }
 
 /* FINAL CTA */
-
 .final-cta {
     padding: 100px 0;
     background-color: #102622;
@@ -276,7 +270,6 @@ button {
 }
 
 /* CTA TITLE */
-
 .final-cta h2 {
     margin-bottom: 22px;
     color: #FFFFFF;
@@ -302,9 +295,7 @@ button {
     line-height: 1.7;
 }
 
-
 /* CTA BUTTON */
-
 .primary-button {
     display: inline-flex;
     align-items: center;
@@ -405,7 +396,6 @@ button {
     .reason-card {
         padding: 27px;
     }
-
 }
 
 /* MOBILE HEADER */
@@ -453,7 +443,6 @@ button {
     .container {
         width: calc(100% - 36px);
     }
-
 
     /* HERO */
     .why-hero {
